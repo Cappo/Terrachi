@@ -20,6 +20,7 @@ public class Controller2D : MonoBehaviour {
 
     BoxCollider2D collider; 
     RaycastOrigins raycastOrigins;
+    public CollisionInfo collisions; //this is our public reference to collision info
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,7 @@ public class Controller2D : MonoBehaviour {
 
     public void Move(Vector3 velocity) {
         UpdateRaycastOrigins();
+        collisions.Reset(); //call reset everytime we move, ensuring we have a blank slate each time. 
 
         //if player is moving, check for collisions
         if (velocity.x != 0)
@@ -68,6 +70,9 @@ public class Controller2D : MonoBehaviour {
             {
                 velocity.x = (hit.distance - skinWidth) * directionX;
                 rayLength = hit.distance;
+
+                collisions.left = directionX == -1; //if we are moving left (-1) when we collide with something, set collisions.left bool to true. 
+                collisions.right = directionX == 1;
             }
         }
     }
@@ -90,6 +95,9 @@ public class Controller2D : MonoBehaviour {
             if (hit) {
                 velocity.y = (hit.distance - skinWidth) * directionY;
                 rayLength = hit.distance;
+
+                collisions.below = directionY == -1; //if we are moving down (-1) when we collide with something, set collisions.l bool to true. 
+                collisions.right = directionY == 1;
             }
         }
     }
@@ -124,6 +132,19 @@ public class Controller2D : MonoBehaviour {
     {
         public Vector2 topLeft, topRight;
         public Vector2 bottomLeft, bottomRight;
-    } 
+    }
+
+    public struct CollisionInfo {
+        public bool above, below;
+        public bool left, right;
+
+        //function to set all boolean values to false
+        public void Reset() {
+            above = below = false;
+            left = right = false;
+        }
+
+
+    }
     
 }
