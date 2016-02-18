@@ -14,6 +14,9 @@ public class Controller2D : MonoBehaviour {
     public int horizontalRayCount = 4;
     public int verticalRayCount = 4;
 
+    //maximum slope player can climb
+    float maxClimbAngle = 80;
+
     //define the spacing between each horizontal/vertical ray, depending on how many we've chosen to fire + size of the bounds
     float horizontalRaySpacing;
     float verticalRaySpacing;
@@ -68,11 +71,36 @@ public class Controller2D : MonoBehaviour {
 
             if (hit)
             {
-                velocity.x = (hit.distance - skinWidth) * directionX;
-                rayLength = hit.distance;
+                //if we hit something, we must first check the angle of the surface we've hit:
+                float slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
 
-                collisions.left = directionX == -1; //if we are moving left (-1) when we collide with something, set collisions.left bool to true. 
-                collisions.right = directionX == 1;
+                //if this is the bottom-most ray (i == not)
+                if (i == 0  && slopeAngle <= maxClimbAngle) {
+                    float distanceToSlopeStart = 0;
+
+                    //if we are beginning to climb a slope
+                    if (slopeAngle != collisions.slopeAngleOld) {
+                        distanceToSlopeStart = hit.distance - skinWidth;
+                        velocity.x -= distanceToSlopeStart * directionX;
+                    }
+                    ClimbSlope(ref velocity, slopeAngle);
+                    velocity.x += distanceToSlopeStart * directionX;
+                    
+                    //print the current slope angle to the console
+                    //print(slopeAngle);       
+                }
+
+                if (!collisions.climbingSlope || slopeAngle > maxClimbAngle)
+                {
+                    //then check the rest of the rays for collisions
+
+                    velocity.x = (hit.distance - skinWidth) * directionX;
+                    rayLength = hit.distance;
+
+                    collisions.left = directionX == -1; //if we are moving left (-1) when we collide with something, set collisions.left bool to true. 
+                    collisions.right = directionX == 1;
+
+                }            
             }
         }
     }
@@ -100,6 +128,27 @@ public class Controller2D : MonoBehaviour {
                 collisions.right = directionY == 1;
             }
         }
+    }
+    
+    void ClimbSlope (ref Vector3 velocity, float slopeAngle) {
+
+        float moveDistance = Mathf.Abs(velocity.x);
+        float climbVelocityY = Mathf.Sin(slopeAngle * Mathf.Deg2Rad) * moveDistance;
+
+        if (velocity.y <= climbVelocityY) {
+            velocity.y = climbVelocityY;
+            velocity.x = Mathf.Cos(slopeAngle * Mathf.Deg2Rad) * moveDistance * Mathf.Sign(velocity.x);
+            collisions.below = true;
+            collisions.climbingSlope = true;
+            collisions.slopeAngle = slopeAngle;
+        }
+       
+        
+
+
+
+
+
     }
 
     void UpdateRaycastOrigins() {
@@ -137,11 +186,16 @@ public class Controller2D : MonoBehaviour {
     public struct CollisionInfo {
         public bool above, below;
         public bool left, right;
+        public bool climbingSlope;
 
+        public float slopeAngle, slopeAngleOld; //slopeAngleOld == slopeAngle we had in the previous frame
         //function to set all boolean values to false
         public void Reset() {
             above = below = false;
             left = right = false;
+            climbingSlope = false;
+            slopeAngleOld = slopeAngle;
+            slopeAngle = 0;
         }
 
 
