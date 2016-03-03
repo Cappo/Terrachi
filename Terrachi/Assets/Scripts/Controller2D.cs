@@ -2,33 +2,17 @@
 using System.Collections;
 
 [RequireComponent(typeof(BoxCollider2D))]
-public class Controller2D : MonoBehaviour
+public class Controller2D : RayCastController
 {
-    //use this layermask to determine whether a layer is collidable
-    public LayerMask collisionMask;
-
-    //skin width inset for raycasting
-    const float skinWidth = .015f;
-    public int horizontalRayCount = 4;
-    public int verticalRayCount = 4;
-
-
     //define how many rays are being fired horizontally and vertically:
     float maxClimbAngle = 80;
     float maxDescendAngle = 80;
 
-    //define the spacing between each horizontal/vertical ray, depending on how many we've chosen to fire + size of the bounds
-    float horizontalRaySpacing;
-    float verticalRaySpacing;
-
-    BoxCollider2D collider;
-    RaycastOrigins raycastOrigins;
     public CollisionInfo collisions; //this is our public reference to collision info
 
-    void Start()
+    public override void Start()
     {
-        collider = GetComponent<BoxCollider2D>();
-        CalculateRaySpacing();
+        base.Start(); //start by calling start method in RayCast Controller
     }
 
     public void Move(Vector3 velocity)
@@ -58,7 +42,7 @@ public class Controller2D : MonoBehaviour
 
     void HorizontalCollisions(ref Vector3 velocity)
     {
-        //get the direction of our y velocity:
+        //get the direction of our x velocity:
         float directionX = Mathf.Sign(velocity.x);
         //float for the length of our ray, .Abs is called to force that number positive.
         float rayLength = Mathf.Abs(velocity.x) + skinWidth;
@@ -112,6 +96,7 @@ public class Controller2D : MonoBehaviour
 
     void VerticalCollisions(ref Vector3 velocity)
     {
+        //get the direction of the y velocity: up or down
         float directionY = Mathf.Sign(velocity.y);
         float rayLength = Mathf.Abs(velocity.y) + skinWidth;
 
@@ -201,37 +186,7 @@ public class Controller2D : MonoBehaviour
         }
     }
 
-    void UpdateRaycastOrigins()
-    {
-        Bounds bounds = collider.bounds;
-        bounds.Expand(skinWidth * -2); //shrinks bounds on all sides by skinWidth
-
-        raycastOrigins.bottomLeft = new Vector2(bounds.min.x, bounds.min.y);
-        raycastOrigins.bottomRight = new Vector2(bounds.max.x, bounds.min.y);
-        raycastOrigins.topLeft = new Vector2(bounds.min.x, bounds.max.y);
-        raycastOrigins.topRight = new Vector2(bounds.max.x, bounds.max.y);
-    }
-
-    void CalculateRaySpacing()
-    {
-        Bounds bounds = collider.bounds;
-        bounds.Expand(skinWidth * -2); //shrinks bounds on all sides by skinWidth
-
-        //these lines ensure that atleast 2 rays are being fired in the horizontal & vertical directions
-        horizontalRayCount = Mathf.Clamp(horizontalRayCount, 2, int.MaxValue);
-        verticalRayCount = Mathf.Clamp(verticalRayCount, 2, int.MaxValue);
-
-        //calculate spacing between each ray
-        horizontalRaySpacing = bounds.size.y / (horizontalRayCount - 1);
-        verticalRaySpacing = bounds.size.x / (verticalRayCount - 1);
-    }
-
-    //struct to store the four corners of our box collider (at all times).
-    struct RaycastOrigins
-    {
-        public Vector2 topLeft, topRight;
-        public Vector2 bottomLeft, bottomRight;
-    }
+   
 
     public struct CollisionInfo
     {
