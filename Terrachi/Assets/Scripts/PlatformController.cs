@@ -6,17 +6,17 @@ public class PlatformController : RaycastController {
 
 	public LayerMask passengerMask;
 
-	public Vector3[] localWaypoints;
+	public Vector3[] localWaypoints; //stores a bunch of positions relative to our platform (that make up our waypoints)
 	Vector3[] globalWaypoints;
 
-	public float speed;
+	public float speed; //store speed of platform
 	public bool cyclic;
 	public float waitTime;
 	[Range(0,2)]
 	public float easeAmount;
 
-	int fromWaypointIndex;
-	float percentBetweenWaypoints;
+	int fromWaypointIndex; //index of the global waypoint we are moving away form
+	float percentBetweenWaypoints; //percentage is between 0 and 1, not 0 and 100
 	float nextMoveTime;
 
 	List<PassengerMovement> passengerMovement; //List to store PassengerMovement struct info each time we calculate passenger movement.
@@ -26,7 +26,7 @@ public class PlatformController : RaycastController {
 	public override void Start () {
 		base.Start (); //calls the start function from RayCast controller
 
-		globalWaypoints = new Vector3[localWaypoints.Length];
+		globalWaypoints = new Vector3[localWaypoints.Length]; //define an array of vector3s with the length set to the length of the localWaypoints array
 		for (int i =0; i < localWaypoints.Length; i++) {
 			globalWaypoints[i] = localWaypoints[i] + transform.position;
 		}
@@ -36,7 +36,7 @@ public class PlatformController : RaycastController {
 
 		UpdateRaycastOrigins ();
 
-		Vector3 velocity = CalculatePlatformMovement();
+		Vector3 velocity = CalculatePlatformMovement(); //speed and direction determined by result of this func. 
 
 		CalculatePassengerMovement(velocity);
 
@@ -50,6 +50,9 @@ public class PlatformController : RaycastController {
 		return Mathf.Pow(x,a) / (Mathf.Pow(x,a) + Mathf.Pow(1-x,a));
 	}
 	
+    //which waypoint are we moving away from?
+    //which waypoint are we moving towards?
+    //what is the percentage that we've moved between the two
 	Vector3 CalculatePlatformMovement() {
 
 		if (Time.time < nextMoveTime) {
@@ -59,15 +62,15 @@ public class PlatformController : RaycastController {
 		fromWaypointIndex %= globalWaypoints.Length;
 		int toWaypointIndex = (fromWaypointIndex + 1) % globalWaypoints.Length;
 		float distanceBetweenWaypoints = Vector3.Distance (globalWaypoints [fromWaypointIndex], globalWaypoints [toWaypointIndex]);
-		percentBetweenWaypoints += Time.deltaTime * speed/distanceBetweenWaypoints;
+		percentBetweenWaypoints += Time.deltaTime * speed/distanceBetweenWaypoints; //We divide by distanceBetweenWaypoints to prevent platform from moving much faster when waypoints are very far away.
 		percentBetweenWaypoints = Mathf.Clamp01 (percentBetweenWaypoints);
 		float easedPercentBetweenWaypoints = Ease (percentBetweenWaypoints);
 
-		Vector3 newPos = Vector3.Lerp (globalWaypoints [fromWaypointIndex], globalWaypoints [toWaypointIndex], easedPercentBetweenWaypoints);
+		Vector3 newPos = Vector3.Lerp (globalWaypoints [fromWaypointIndex], globalWaypoints [toWaypointIndex], easedPercentBetweenWaypoints); //find the point between our fromWayPoint and our ToWayPoint based on the percentageBetweenWaypoints
 
-		if (percentBetweenWaypoints >= 1) {
-			percentBetweenWaypoints = 0;
-			fromWaypointIndex ++;
+		if (percentBetweenWaypoints >= 1) { //if we've reached the next waypoint
+			percentBetweenWaypoints = 0; //reset the percentage
+			fromWaypointIndex ++; //increment the fromWaypointIndex so that we move to the next set of waypoints
 
 			if (!cyclic) {
 				if (fromWaypointIndex >= globalWaypoints.Length-1) {
@@ -193,14 +196,15 @@ public class PlatformController : RaycastController {
 	}
 
 	void OnDrawGizmos() {
-		if (localWaypoints != null) {
-			Gizmos.color = Color.red;
+		if (localWaypoints != null) { //only draw gizmos if localWaypoints isn't empty
+			Gizmos.color = Color.green;
 			float size = .3f;
 
 			for (int i =0; i < localWaypoints.Length; i ++) {
-				Vector3 globalWaypointPos = (Application.isPlaying)?globalWaypoints[i] : localWaypoints[i] + transform.position;
-				Gizmos.DrawLine(globalWaypointPos - Vector3.up * size, globalWaypointPos + Vector3.up * size);
-				Gizmos.DrawLine(globalWaypointPos - Vector3.left * size, globalWaypointPos + Vector3.left * size);
+                //convert local position into a global position
+                Vector3 globalWaypointPos = (Application.isPlaying)?globalWaypoints[i] : localWaypoints[i] + transform.position; //if game is running, use global waypoint position, if not don't move them.
+				Gizmos.DrawLine(globalWaypointPos - Vector3.up * size, globalWaypointPos + Vector3.up * size); //draw vertical line 
+				Gizmos.DrawLine(globalWaypointPos - Vector3.left * size, globalWaypointPos + Vector3.left * size); //draw horizontal line
 			}
 		}
 	}
