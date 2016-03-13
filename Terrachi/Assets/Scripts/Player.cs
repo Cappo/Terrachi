@@ -2,6 +2,12 @@
 using System.Collections;
 
 [RequireComponent (typeof (Controller2D))]
+
+/*The Player script is responsible for receiving input. Which it then sends to the controller script.
+The controller scripts task is to move the player, while constraining to collisions.
+It does this by sending out rays first horizontally, and then vertically in the direction the play is moving.
+*/
+
 public class Player : MonoBehaviour {
 
 	public float maxJumpHeight = 4;

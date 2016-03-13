@@ -158,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 477656804}
   m_LocalRotation: {x: -0.00055829657, y: 0.19562805, z: 0.0027987137, w: 0.980674}
-  m_LocalPosition: {x: 23.83, y: 2.14, z: 0.82}
+  m_LocalPosition: {x: 6.67, y: 2.04, z: 7.95}
   m_LocalScale: {x: 4, y: 0.58901817, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -184,7 +184,7 @@ MonoBehaviour:
   collider: {fileID: 0}
   passengerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   localWaypoints: []
   speed: 0
   cyclic: 0
@@ -787,7 +787,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1963045186}
   m_LocalRotation: {x: 0, y: 0, z: 0.71605843, w: 0.6980404}
-  m_LocalPosition: {x: -8.73, y: 0.37, z: 0}
+  m_LocalPosition: {x: -8.6, y: -4, z: 0}
   m_LocalScale: {x: 10.820072, y: 0.58901817, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
