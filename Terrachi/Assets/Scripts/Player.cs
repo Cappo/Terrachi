@@ -13,9 +13,9 @@ public class Player : MonoBehaviour {
 	public float maxJumpHeight = 4;
 	public float minJumpHeight = 1;
 	public float timeToJumpApex = .4f; //how long do we want our character to take to reach the highest point in his/her jump?
-    float accelerationTimeAirborne = .2f;
-	float accelerationTimeGrounded = .1f;
-	float moveSpeed = 6;
+    float accelerationTimeAirborne = .075f;
+	float accelerationTimeGrounded = .05f;
+	float moveSpeed = 7;
 
     //jumpHeight and timeToJumpApex will determine what gravity and jumpVelocity are set to.
     float gravity;
