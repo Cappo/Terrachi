@@ -109,16 +109,19 @@ public class GrapplingHook : MonoBehaviour
             Hooked = true; //defining that the hook object is colliding with the HOOK_PLACE, meaning that the hook will stop moving
             Fired = false; //setting Fired to false so that hook will stop moving and stay where it is
 
-            PlayerHingeJoint = Player.gameObject.AddComponent<HingeJoint2D>();
-            PlayerHingeJoint.anchor = Player.transform.position;
+            //Save the initial velocity
+            Vector2 initial_velocity = Player.GetComponent<Player>().velocity;
             Anchor.transform.position = other.contacts[0].point;
             Anchor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            PlayerHingeJoint = Player.gameObject.AddComponent<HingeJoint2D>();
+            PlayerHingeJoint.anchor = Anchor.transform.position - Player.transform.position;
             PlayerHingeJoint.connectedBody = Anchor.GetComponent<Rigidbody2D>();
             PlayerHingeJoint.connectedAnchor = Vector3.zero;
-            //Make player not kinematic.
             Player.GetComponent<Rigidbody2D>().isKinematic = false;
             //Disable Player script because it screws with stuff
             Player.GetComponent<Player>().enabled = false;
+            //Let's try to maintain some velocity
+            Player.GetComponent<Rigidbody2D>().velocity = initial_velocity;
         }
         else
         {
