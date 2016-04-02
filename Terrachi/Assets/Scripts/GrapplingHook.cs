@@ -27,8 +27,11 @@ public class GrapplingHook : MonoBehaviour
 
     public float Force;
 
+    Controller2D controller;
+
     void Start()
     {
+        controller = Player.GetComponent<Controller2D>();
 
     }
 
@@ -49,12 +52,15 @@ public class GrapplingHook : MonoBehaviour
         //lets now let the player to press right mouse button to replace the hook
         if (Input.GetMouseButtonDown(1))
         {
+            Vector2 endVelocity = Player.GetComponent<Rigidbody2D>().velocity;
             Fired = false;
             Hooked = false;
             Destroy(PlayerHingeJoint);
             Anchor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             Player.GetComponent<Rigidbody2D>().isKinematic = true;
             Player.GetComponent<Player>().enabled = true;
+            Player.transform.rotation = Quaternion.identity;
+            Player.GetComponent<Player>().velocity = endVelocity;
         }
 
         //by default, the hook will be following the Player object if not fired and if not hooked
