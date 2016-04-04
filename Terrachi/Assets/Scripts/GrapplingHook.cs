@@ -113,6 +113,11 @@ public class GrapplingHook : MonoBehaviour
             Vector2 initial_velocity = Player.GetComponent<Player>().velocity;
             Anchor.transform.position = other.contacts[0].point;
             Anchor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            //Try to let the player grapple even when they're standing
+            if (Player.GetComponent<Controller2D>().collisions.below)
+            {
+                Player.transform.Translate(Vector3.up * .1F);
+            }
             PlayerHingeJoint = Player.gameObject.AddComponent<HingeJoint2D>();
             PlayerHingeJoint.anchor = Anchor.transform.position - Player.transform.position;
             PlayerHingeJoint.connectedBody = Anchor.GetComponent<Rigidbody2D>();
