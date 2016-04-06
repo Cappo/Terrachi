@@ -69,6 +69,14 @@ public class Player : MonoBehaviour {
 			velocity.y = 0;
 		}
 
+        //Test "death" scenario, can be removed later
+        if (transform.position.y < -100)
+        {
+            Vector3 respawnPoint = Checkpoint.GetActiveCheckpointPosition();
+            respawnPoint.y += 5;
+            velocity = Vector3.zero;
+            transform.position = respawnPoint;
+        }
 	}
 }
 
