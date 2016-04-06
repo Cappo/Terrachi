@@ -75,6 +75,18 @@ public class UIManager : MonoBehaviour {
         }
     }
 
+    public void loadCheckpoint()
+    {
+        Vector3 checkpoint = Checkpoint.GetActiveCheckpointPosition();
+        checkpoint.y += 5;
+        player.GetComponent<Player>().velocity = Vector3.zero;
+        player.transform.position = checkpoint;
+        //Move the camera too because apparently it can't do it itself.
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+        camera.transform.position = checkpoint;
+        resume();
+    }
+
     public void quitToDesktop()
     {
         //If we are running in a standalone build of the game
