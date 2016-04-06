@@ -142,15 +142,17 @@ public class GrapplingHook : MonoBehaviour
         Rigidbody2D rig;
         rig = Player.GetComponent<Rigidbody2D>();
 
+        float input = Input.GetAxisRaw("Horizontal");
+
         //let's set up our movement while hooked
-        if (Input.GetKey(KeyCode.A))
+        if (input < 0)
         {
-            rig.AddForce(Vector3.left * Force);
+            rig.AddForce(Vector3.left * Force * input * -1);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            rig.AddForce(Vector3.right * Force);
+            rig.AddForce(Vector3.right * Force * input);
         }
     }
 
