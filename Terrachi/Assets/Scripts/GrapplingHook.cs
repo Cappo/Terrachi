@@ -150,7 +150,7 @@ public class GrapplingHook : MonoBehaviour
             rig.AddForce(Vector3.left * Force * input * -1);
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (input > 0)
         {
             rig.AddForce(Vector3.right * Force * input);
         }
