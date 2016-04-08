@@ -1,0 +1,362 @@
+fileFormatVersion: 2
+guid: 6783477c4533ef3469d7fc5d33526a86
+timeCreated: 1460075099
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walk1
+    21300002: walk2
+    21300004: walk3
+    21300006: walk4
+    21300008: walk5
+    21300010: walk6
+    21300012: walk7
+    21300014: jump1
+    21300016: jump2
+    21300018: jump3
+    21300020: jump4
+    21300022: jump5
+    21300024: jump6
+    21300026: idle1
+    21300028: idle2
+    21300030: idle3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 256
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walk1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 150
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 56}
+        - {x: -23, y: 56}
+        - {x: -24, y: 55}
+        - {x: -24, y: -36}
+        - {x: -12, y: -56}
+        - {x: 14, y: -56}
+        - {x: 24, y: -29}
+        - {x: 24, y: 46}
+        - {x: 23, y: 48}
+    - name: walk2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 150
+        width: 47
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 55.5}
+        - {x: -23.5, y: -55.5}
+        - {x: 17.5, y: -55.5}
+        - {x: 23.5, y: -22.5}
+        - {x: 23.5, y: 51.5}
+        - {x: 16.5, y: 55.5}
+    - name: walk3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 151
+        width: 47
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.5, y: -25}
+        - {x: 23.5, y: 45}
+        - {x: 13.5, y: 54}
+        - {x: -23.5, y: 54}
+        - {x: -23.5, y: -54}
+        - {x: -12.5, y: -54}
+        - {x: -2.5, y: -44}
+        - {x: 10.5, y: -54}
+        - {x: 21.5, y: -54}
+    - name: walk4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 150
+        width: 47
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 55.5}
+        - {x: -23.5, y: -55.5}
+        - {x: 17.5, y: -55.5}
+        - {x: 23.5, y: -22.5}
+        - {x: 23.5, y: 51.5}
+        - {x: 16.5, y: 55.5}
+    - name: walk5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 150
+        width: 48
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 55.5}
+        - {x: -24, y: -47.5}
+        - {x: -15, y: -55.5}
+        - {x: 19, y: -55.5}
+        - {x: 24, y: -50.5}
+        - {x: 24, y: 55.5}
+    - name: walk6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 150
+        width: 50
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 54}
+        - {x: -25, y: 36}
+        - {x: -25, y: 23}
+        - {x: -22, y: 12}
+        - {x: -25, y: 0}
+        - {x: -25, y: -54}
+        - {x: 25, y: -54}
+        - {x: 25, y: 54}
+    - name: walk7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 150
+        width: 48
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 55.5}
+        - {x: -24, y: -47.5}
+        - {x: -15, y: -55.5}
+        - {x: 19, y: -55.5}
+        - {x: 24, y: -50.5}
+        - {x: 24, y: 55.5}
+    - name: jump1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 7
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 56}
+        - {x: -23, y: 56}
+        - {x: -24, y: 55}
+        - {x: -24, y: -36}
+        - {x: -12, y: -56}
+        - {x: 14, y: -56}
+        - {x: 24, y: -29}
+        - {x: 24, y: 46}
+        - {x: 23, y: 48}
+    - name: jump2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 7
+        width: 50
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 55.5}
+        - {x: -25, y: 48.5}
+        - {x: -25, y: -55.5}
+        - {x: 25, y: -55.5}
+        - {x: 25, y: 55.5}
+    - name: jump3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 13
+        width: 54
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 53.5}
+        - {x: -27, y: -53.5}
+        - {x: -16, y: -53.5}
+        - {x: -9, y: -50.5}
+        - {x: 3, y: -53.5}
+        - {x: 27, y: -53.5}
+        - {x: 27, y: 47.5}
+        - {x: 25, y: 53.5}
+    - name: jump4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 25
+        width: 54
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 52}
+        - {x: -27, y: -52}
+        - {x: 27, y: -52}
+        - {x: 27, y: 38}
+        - {x: 20, y: 52}
+    - name: jump5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 12
+        width: 54
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 53.5}
+        - {x: -27, y: 44.5}
+        - {x: -27, y: -52.5}
+        - {x: 25, y: -52.5}
+        - {x: 25, y: 49.5}
+        - {x: 15, y: 53.5}
+    - name: jump6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 6
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 56}
+        - {x: -24, y: -34}
+        - {x: -12, y: -56}
+        - {x: 24, y: -56}
+        - {x: 24, y: 56}
+    - name: idle1
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 7
+        width: 48
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 57}
+        - {x: -24, y: -42}
+        - {x: -13, y: -57}
+        - {x: 24, y: -57}
+        - {x: 24, y: 57}
+    - name: idle2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 7
+        width: 50
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 57}
+        - {x: -25, y: 44}
+        - {x: -25, y: 19}
+        - {x: -16, y: 8}
+        - {x: -13, y: 7}
+        - {x: -9, y: 5}
+        - {x: -9, y: 6}
+        - {x: -11, y: 5}
+        - {x: -25, y: 1}
+        - {x: -25, y: -30}
+        - {x: -17, y: -57}
+        - {x: 11, y: -57}
+        - {x: 25, y: -38}
+        - {x: 25, y: 54}
+        - {x: 23, y: 57}
+    - name: idle3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 7
+        width: 48
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 57}
+        - {x: -24, y: -42}
+        - {x: -13, y: -57}
+        - {x: 24, y: -57}
+        - {x: 24, y: 57}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

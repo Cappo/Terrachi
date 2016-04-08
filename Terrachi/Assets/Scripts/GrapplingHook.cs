@@ -60,7 +60,7 @@ public class GrapplingHook : MonoBehaviour
             Player.GetComponent<Rigidbody2D>().isKinematic = true;
             Player.GetComponent<Player>().enabled = true;
             Player.transform.rotation = Quaternion.identity;
-            Player.GetComponent<Player>().velocity = endVelocity;
+            Player.GetComponent<Player>().velocity = endVelocity * 2;
         }
 
         //by default, the hook will be following the Player object if not fired and if not hooked
@@ -141,7 +141,6 @@ public class GrapplingHook : MonoBehaviour
 
     void RopeMovement()
     {
-        print("You're in RopeMovement");
         //first we'll initialize the rigidbody of player
         Rigidbody2D rig;
         rig = Player.GetComponent<Rigidbody2D>();
