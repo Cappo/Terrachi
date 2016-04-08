@@ -118,8 +118,16 @@ public class GrapplingHook : MonoBehaviour
             {
                 Player.transform.Translate(Vector3.up * .1F);
             }
+            //Fix the rotation
+            //Get the anchor point we'll use later
+            Vector3 anchor_point = Anchor.transform.position - Player.transform.position;
+            float rotation_correction = Mathf.Rad2Deg * Mathf.Atan(anchor_point.x / anchor_point.y) * -1;
+            Player.transform.Rotate(new Vector3(0, 0, rotation_correction));
+            anchor_point.y = Vector3.Distance(Vector3.zero, anchor_point);
+            anchor_point.x = 0;
+            anchor_point.z = 0;
             PlayerHingeJoint = Player.gameObject.AddComponent<HingeJoint2D>();
-            PlayerHingeJoint.anchor = Anchor.transform.position - Player.transform.position;
+            PlayerHingeJoint.anchor = anchor_point;
             PlayerHingeJoint.connectedBody = Anchor.GetComponent<Rigidbody2D>();
             PlayerHingeJoint.connectedAnchor = Vector3.zero;
             Player.GetComponent<Rigidbody2D>().isKinematic = false;
