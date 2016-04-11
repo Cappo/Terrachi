@@ -25,9 +25,11 @@ public class Player : MonoBehaviour {
 	float velocityXSmoothing;
 
 	Controller2D controller; //reference to the controller component attached to our player GameObject.
+    private Animator animator; //create a variable to store a reference the Animator on the player
 
     void Start() {
 		controller = GetComponent<Controller2D> ();
+        animator = GetComponent<Animator>(); //assign the Animator component on the player gameobject to our new reference var. 
 
         //set up jump physics
 		gravity = -(2 * maxJumpHeight) / Mathf.Pow (timeToJumpApex, 2);
@@ -39,19 +41,20 @@ public class Player : MonoBehaviour {
         //Update is called once per frame
 	void Update() {
 		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
-		
-
 		float targetVelocityX = input.x * moveSpeed; //initially set this to just velocity.x
+
         // if we are grounded (controller.collisions.below = true) use acceleration time grounded, otherwise use airborne.
         velocity.x = Mathf.SmoothDamp (velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
 
-        //flip player based on input, and direction player is movement
-        if ( input.x > 0 && controller.collisions.faceDir == -1 || input.x < 0 && controller.collisions.faceDir == 1)
+        
+        //If moving right (input.x > 0) and currently facing left (facedir == -1)  OR  If moving left (input.x < 0) and currently facing right (faceDir == 1) THEN:
+        if (input.x > 0 && controller.collisions.faceDir == -1 || input.x < 0 && controller.collisions.faceDir == 1)
         {
-           
-            Vector3 theScale = transform.localScale;
-            theScale.x = theScale.x * -1; //assign localScale to the opposite value 
-            transform.localScale = theScale; //assign theScale back to the players localScale (resulting in a flip)
+
+            //flip the player
+            Vector3 theScale = transform.localScale; //grab the local scale from the player and assign it to a Vector3 var
+            theScale.x = theScale.x * -1; //assign localScale to the opposite of it's current value 
+            transform.localScale = theScale; //set player's scale to be theScale 
         }
 
 
