@@ -45,7 +45,14 @@ public class Player : MonoBehaviour {
         // if we are grounded (controller.collisions.below = true) use acceleration time grounded, otherwise use airborne.
         velocity.x = Mathf.SmoothDamp (velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
 
-
+        //flip player based on input, and direction player is movement
+        if ( input.x > 0 && controller.collisions.faceDir == -1 || input.x < 0 && controller.collisions.faceDir == 1)
+        {
+           
+            Vector3 theScale = transform.localScale;
+            theScale.x = theScale.x * -1; //assign localScale to the opposite value 
+            transform.localScale = theScale; //assign theScale back to the players localScale (resulting in a flip)
+        }
 
 
         //if the "Space" key is pressed 
@@ -60,6 +67,7 @@ public class Player : MonoBehaviour {
 			}
 		}
 
+        
 	
 		velocity.y += gravity * Time.deltaTime;
 		controller.Move (velocity * Time.deltaTime, input);
