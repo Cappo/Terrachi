@@ -15,6 +15,11 @@ public class Controller2D : RaycastController {
 		collisions.faceDir = 1; //player starts facing right
 
 	}
+
+    public void Move()
+    {
+        Move(Vector3.zero, Vector2.zero);
+    }
 	
 	public void Move(Vector3 velocity, bool standingOnPlatform) {
 		Move (velocity, Vector2.zero, standingOnPlatform);
@@ -98,6 +103,12 @@ public class Controller2D : RaycastController {
 		}
 	}
 	
+    void VerticalCollisions()
+    {
+        Vector3 dummy_velocity = Vector3.down * .1F;
+        VerticalCollisions(ref dummy_velocity);
+    }
+
 	void VerticalCollisions(ref Vector3 velocity) {
 		float directionY = Mathf.Sign (velocity.y);
 		float rayLength = Mathf.Abs (velocity.y) + skinWidth;
@@ -193,6 +204,17 @@ public class Controller2D : RaycastController {
 	void ResetFallingThroughPlatform() {
 		collisions.fallingThroughPlatform = false;
 	}
+
+    //This is only used when grappling
+    /*void OnCollisionEnter2D(Collision2D col)
+    {
+        GameObject grappling_hook = GameObject.Find("Grappling Hook");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (grappling_hook.GetComponent<Rigidbody2D>().isKinematic == false)
+        {
+            grappling_hook.GetComponent<GrapplingHook>().Invoke("exitRope", 0);
+        }
+    }*/
 
 	public struct CollisionInfo {
 		public bool above, below;

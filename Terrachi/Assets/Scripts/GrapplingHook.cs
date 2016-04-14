@@ -18,6 +18,7 @@ public class GrapplingHook : MonoBehaviour
     public float MovementSpeed = 0.2f; //movement speed for the hook object to fly to its destination
     public int MD = 10; //setting a limit to maximum distance, MD stands for "Max Distance"
     public float DFH; //calculating distance from hook holder, DFH stands for "Distance From HookHolder"
+    public float ClimbRate = .1F; //Rate at which the player can climb or lower on the grappling hook
 
     private Vector3 lastPos; //calculating the last position of the mouse click in order to sen the hook object
     private Vector3 lastPosOO; //last position for OtherObject (lastPosOO stands for "last position other object"
@@ -52,15 +53,7 @@ public class GrapplingHook : MonoBehaviour
         //lets now let the player to press right mouse button to replace the hook
         if (Input.GetMouseButtonDown(1))
         {
-            Vector2 endVelocity = Player.GetComponent<Rigidbody2D>().velocity;
-            Fired = false;
-            Hooked = false;
-            Destroy(PlayerHingeJoint);
-            Anchor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-            Player.GetComponent<Rigidbody2D>().isKinematic = true;
-            Player.GetComponent<Player>().enabled = true;
-            Player.transform.rotation = Quaternion.identity;
-            Player.GetComponent<Player>().velocity = endVelocity;
+            exitRope();
         }
 
         //by default, the hook will be following the Player object if not fired and if not hooked
@@ -116,7 +109,7 @@ public class GrapplingHook : MonoBehaviour
             //Try to let the player grapple even when they're standing
             if (Player.GetComponent<Controller2D>().collisions.below)
             {
-                Player.transform.Translate(Vector3.up * .1F);
+                Player.transform.Translate(Vector3.up * .2F);
             }
             //Fix the rotation
             //Get the anchor point we'll use later
@@ -145,23 +138,80 @@ public class GrapplingHook : MonoBehaviour
 
     void RopeMovement()
     {
-        print("You're in RopeMovement");
         //first we'll initialize the rigidbody of player
         Rigidbody2D rig;
         rig = Player.GetComponent<Rigidbody2D>();
 
-        float input = Input.GetAxisRaw("Horizontal");
+        float horizontal_input = Input.GetAxisRaw("Horizontal");
+        float vertical_input = Input.GetAxisRaw("Vertical");
+
+        //Update the collisions
+        controller.Invoke("UpdateRaycastOrigins", 0);
+        controller.Invoke("VerticalCollisions", 0);
 
         //let's set up our movement while hooked
-        if (input < 0)
+        if (horizontal_input < 0)
         {
-            rig.AddForce(Vector3.left * Force * input * -1);
+            rig.AddForce(Vector3.left * Force * horizontal_input * -1);
         }
 
-        if (input > 0)
+        if (horizontal_input > 0)
         {
-            rig.AddForce(Vector3.right * Force * input);
+            rig.AddForce(Vector3.right * Force * horizontal_input);
+        }
+
+        //Can we vary the rope length?
+        Vector2 anchor_point = Player.GetComponent<HingeJoint2D>().anchor;
+        if (vertical_input < 0)
+        {
+            //We should probably have a limit on how long this can be...
+            if (anchor_point.y < MD)
+            {
+                anchor_point.y += ClimbRate;
+                Player.GetComponent<HingeJoint2D>().anchor = anchor_point;
+            }
+            //Check if we're lowering through the floor, which is obviously not allowed
+            if (Player.GetComponent<Controller2D>().collisions.below)
+            {
+                exitRope();
+            }
+        }
+        if (vertical_input > 0)
+        {
+            if (anchor_point.y > 1F) //If we get too close to the anchor, weird things happen.
+            {
+                anchor_point.y -= ClimbRate;
+                Player.GetComponent<HingeJoint2D>().anchor = anchor_point;
+            }
+        }
+
+        //Jump off of the grappling hook
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector2 boost = new Vector2(0, 12);
+            if (horizontal_input < 0)
+            {
+                boost.x -= 10F;
+            }
+            else if (horizontal_input > 0)
+            {
+                boost.x += 10F;
+            }
+            Player.GetComponent<Rigidbody2D>().velocity += boost;
+            exitRope();
         }
     }
 
+    void exitRope()
+    {
+        Vector2 endVelocity = Player.GetComponent<Rigidbody2D>().velocity;
+        Fired = false;
+        Hooked = false;
+        Destroy(PlayerHingeJoint);
+        Anchor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        Player.GetComponent<Rigidbody2D>().isKinematic = true;
+        Player.GetComponent<Player>().enabled = true;
+        Player.transform.rotation = Quaternion.identity;
+        Player.GetComponent<Player>().velocity = endVelocity;
+    }
 }
