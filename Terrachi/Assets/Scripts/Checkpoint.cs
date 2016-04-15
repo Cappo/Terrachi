@@ -11,7 +11,8 @@ public class Checkpoint : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
+        //print("Test1");
+        //CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
 	}
 	
     //Activate this checkpoint
@@ -24,6 +25,10 @@ public class Checkpoint : MonoBehaviour {
         }
         //...and then activate this one
         activated = true;
+
+        SaveLoad.save.checkpoint = this.name;
+
+        SaveLoad.Save();
     }
 
     void OnTriggerEnter2D(Collider2D other)
