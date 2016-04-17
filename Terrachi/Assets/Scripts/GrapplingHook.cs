@@ -148,6 +148,8 @@ public class GrapplingHook : MonoBehaviour
         //Update the collisions
         controller.Invoke("UpdateRaycastOrigins", 0);
         controller.Invoke("VerticalCollisions", 0);
+        //Let's manually set collisions.below because it's acting screwy
+        controller.collisions.below = false;
 
         //let's set up our movement while hooked
         if (horizontal_input < 0)
