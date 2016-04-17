@@ -48,7 +48,7 @@ public class Controller2D : RaycastController {
 
 		if (standingOnPlatform) {
 			collisions.below = true;
-            print("Standing on platform");
+            //print("Standing on platform");
 		}
 	}
 
@@ -149,7 +149,7 @@ public class Controller2D : RaycastController {
 				}
 
 				collisions.below = directionY == -1;
-                print("Collisions below set to " + collisions.below + " in VerticalCollisions");
+                //print("Collisions below set to " + collisions.below + " in VerticalCollisions");
 				collisions.above = directionY == 1;
 			}
 		}
@@ -178,7 +178,7 @@ public class Controller2D : RaycastController {
 			velocity.y = climbVelocityY;
 			velocity.x = Mathf.Cos (slopeAngle * Mathf.Deg2Rad) * moveDistance * Mathf.Sign (velocity.x);
 			collisions.below = true;
-            print("Climb slope collision");
+            //print("Climb slope collision");
 			collisions.climbingSlope = true;
 			collisions.slopeAngle = slopeAngle;
 		}
@@ -202,7 +202,7 @@ public class Controller2D : RaycastController {
 						collisions.slopeAngle = slopeAngle;
 						collisions.descendingSlope = true;
 						collisions.below = true;
-                        print("Descend slope collision");
+                        //print("Descend slope collision");
 					}
 				}
 			}

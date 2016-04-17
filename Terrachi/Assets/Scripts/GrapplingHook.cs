@@ -128,7 +128,7 @@ public class GrapplingHook : MonoBehaviour
             Player.GetComponent<Player>().enabled = false;
             //Let's manually set collisions.below because it's acting screwy
             Player.GetComponent<Controller2D>().collisions.below = false;
-            print("Collisions below set");
+            //print("Collisions below set");
             //Let's try to maintain some velocity
             Player.GetComponent<Rigidbody2D>().velocity = initial_velocity;
         }
@@ -174,7 +174,7 @@ public class GrapplingHook : MonoBehaviour
                 Player.GetComponent<HingeJoint2D>().anchor = anchor_point;
             }
             //Check if we're lowering through the floor, which is obviously not allowed
-            print(controller.collisions.below);
+            //print(controller.collisions.below);
             if (Player.GetComponent<Controller2D>().collisions.below)
             {
                 exitRope();
