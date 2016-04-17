@@ -11458,8 +11458,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-<<<<<<< HEAD
-=======
 --- !u!1001 &857486451
 Prefab:
   m_ObjectHideFlags: 0
@@ -11518,7 +11516,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62b30b8b3b3deb041b193ef192826144, type: 2}
   m_IsPrefabParent: 0
->>>>>>> checkpoints
 --- !u!1001 &857672401
 Prefab:
   m_ObjectHideFlags: 0
