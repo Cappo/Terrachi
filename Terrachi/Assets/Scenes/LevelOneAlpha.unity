@@ -6717,13 +6717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e11bb99a0ce076438ed4d9cb8d7f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1680644390}
-  updateRate: 2
-  speed: 300
-  fMode: 0
-  pathIsEnded: 0
-  nextWaypointDistance: 2
-  aggroRange: 10
 --- !u!50 &502573355
 Rigidbody2D:
   serializedVersion: 2
@@ -6752,22 +6745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawGizmos: 1
-  detailedGizmos: 1
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  traversableTagsCompatibility:
-    tagsChange: -1
-    tagsSet: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!212 &502573357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10407,7 +10384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646b47403c69df44c8cd5ea073ebcc08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
 --- !u!61 &788798845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10450,22 +10426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawGizmos: 1
-  detailedGizmos: 1
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  traversableTagsCompatibility:
-    tagsChange: -1
-    tagsSet: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!212 &788798848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10507,7 +10467,7 @@ Transform:
   m_LocalScale: {x: 2.5242097, y: 2.538718, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1001 &789237239
 Prefab:
   m_ObjectHideFlags: 0
@@ -14958,7 +14918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646b47403c69df44c8cd5ea073ebcc08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
 --- !u!61 &953887444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15001,22 +14960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawGizmos: 1
-  detailedGizmos: 1
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  traversableTagsCompatibility:
-    tagsChange: -1
-    tagsSet: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!212 &953887447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15058,7 +15001,7 @@ Transform:
   m_LocalScale: {x: 2.5242097, y: 2.538718, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1001 &955264187
 Prefab:
   m_ObjectHideFlags: 0
@@ -15468,7 +15411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 423486, guid: 614bca03a5fc4a94d8709225d66872bf, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5068972, guid: 614bca03a5fc4a94d8709225d66872bf, type: 2}
       propertyPath: m_AngularDrag
@@ -15919,7 +15862,7 @@ Transform:
   - {fileID: 1585507239}
   - {fileID: 1957161837}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1034370395
 GameObject:
   m_ObjectHideFlags: 0
@@ -18408,22 +18351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawGizmos: 1
-  detailedGizmos: 1
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  traversableTagsCompatibility:
-    tagsChange: -1
-    tagsSet: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!212 &1237838611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18465,7 +18392,7 @@ Transform:
   m_LocalScale: {x: 2.5242097, y: 2.538718, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!114 &1237838613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18477,13 +18404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e11bb99a0ce076438ed4d9cb8d7f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1680644390}
-  updateRate: 2
-  speed: 300
-  fMode: 0
-  pathIsEnded: 0
-  nextWaypointDistance: 2
-  aggroRange: 10
 --- !u!50 &1237838614
 Rigidbody2D:
   serializedVersion: 2
@@ -18687,15 +18607,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1680644390}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 491066, guid: c8a95c00305ba4747b7e54e73be4df91, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 163.13
       objectReference: {fileID: 0}
     - target: {fileID: 491066, guid: c8a95c00305ba4747b7e54e73be4df91, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.04
+      value: -5.4900002
       objectReference: {fileID: 0}
     - target: {fileID: 491066, guid: c8a95c00305ba4747b7e54e73be4df91, type: 2}
       propertyPath: m_LocalPosition.z
@@ -18719,7 +18639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491066, guid: c8a95c00305ba4747b7e54e73be4df91, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 11405440, guid: c8a95c00305ba4747b7e54e73be4df91, type: 2}
       propertyPath: Player
@@ -22082,7 +22002,7 @@ Transform:
   - {fileID: 847567509}
   - {fileID: 247653585}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1499920972
 GameObject:
   m_ObjectHideFlags: 0
@@ -23502,15 +23422,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1680644390}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 409682, guid: 073d0e8e1e76c50469299f0c77b4b8c9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 163.13
       objectReference: {fileID: 0}
     - target: {fileID: 409682, guid: 073d0e8e1e76c50469299f0c77b4b8c9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: -5.7000003
       objectReference: {fileID: 0}
     - target: {fileID: 409682, guid: 073d0e8e1e76c50469299f0c77b4b8c9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -23534,7 +23454,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 409682, guid: 073d0e8e1e76c50469299f0c77b4b8c9, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 073d0e8e1e76c50469299f0c77b4b8c9, type: 2}
@@ -24035,7 +23955,7 @@ Transform:
   - {fileID: 1735342340}
   - {fileID: 318757928}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1638865243
 GameObject:
   m_ObjectHideFlags: 0
@@ -25601,83 +25521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  astarData:
-    dataString: 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
-    upgradeData: 
-    data_backup: 
-    file_cachedStartup: {fileID: 0}
-    data_cachedStartup: 
-    cacheStartup: 0
-  showNavGraphs: 1
-  showUnwalkableNodes: 1
-  debugMode: 0
-  debugFloor: 0
-  debugRoof: 1
-  manualDebugFloorRoof: 0
-  showSearchTree: 0
-  unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
-  maxNearestNodeDistance: 100
-  scanOnStartup: 1
-  fullGetNearestSearch: 0
-  prioritizeGraphs: 0
-  prioritizeGraphsLimit: 1
-  colorSettings:
-    _NodeConnection: {r: 1, g: 1, b: 1, a: 0.9}
-    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
-    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
-    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
-    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
-    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
-    _MeshColor: {r: 0.125, g: 0.686, b: 0, a: 0.19}
-    _AreaColors: []
-  tagNames:
-  - Basic Ground
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 8
-  - 9
-  - 10
-  - 11
-  - 12
-  - 13
-  - 14
-  - 15
-  - 16
-  - 17
-  - 18
-  - 19
-  - 20
-  - 21
-  - 22
-  - 23
-  - 24
-  - 25
-  - 26
-  - 27
-  - 28
-  - 29
-  - 30
-  - 31
-  heuristic: 2
-  heuristicScale: 1
-  threadCount: 0
-  maxFrameTime: 1
-  minAreaSize: 0
-  batchGraphUpdates: 0
-  graphUpdateBatchingInterval: 0.2
-  euclideanEmbedding:
-    mode: 0
-    seed: 0
-    pivotPointRoot: {fileID: 0}
-    spreadOutCount: 1
-  showGraphs: 1
-  lastUniqueAreaIndex: 2
 --- !u!4 &1741065750
 Transform:
   m_ObjectHideFlags: 0
@@ -25689,7 +25532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1742626695
 GameObject:
   m_ObjectHideFlags: 0
@@ -30709,13 +30552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e11bb99a0ce076438ed4d9cb8d7f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1680644390}
-  updateRate: 2
-  speed: 150
-  fMode: 0
-  pathIsEnded: 0
-  nextWaypointDistance: 2
-  aggroRange: 15
 --- !u!50 &2111819870
 Rigidbody2D:
   serializedVersion: 2
@@ -30744,22 +30580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawGizmos: 1
-  detailedGizmos: 1
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  traversableTagsCompatibility:
-    tagsChange: -1
-    tagsSet: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!212 &2111819872
 SpriteRenderer:
   m_ObjectHideFlags: 0
