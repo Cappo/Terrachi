@@ -24,7 +24,7 @@ public class GrapplingHook : MonoBehaviour
     private Vector3 lastPosOO; //last position for OtherObject (lastPosOO stands for "last position other object"
     private Vector3 curPosOO; //current position for OtherObject (curPosOO stands for "current position other object"
 
-    //public AudioClip ShootSound; //the sound effect when hook gets shot	
+    //public AudioClip ShootSound; //the sound effect when hook gets shot
 
     public float Force;
 
@@ -126,6 +126,9 @@ public class GrapplingHook : MonoBehaviour
             Player.GetComponent<Rigidbody2D>().isKinematic = false;
             //Disable Player script because it screws with stuff
             Player.GetComponent<Player>().enabled = false;
+            //Let's manually set collisions.below because it's acting screwy
+            Player.GetComponent<Controller2D>().collisions.below = false;
+            print("Collisions below set");
             //Let's try to maintain some velocity
             Player.GetComponent<Rigidbody2D>().velocity = initial_velocity;
         }
@@ -148,8 +151,6 @@ public class GrapplingHook : MonoBehaviour
         //Update the collisions
         controller.Invoke("UpdateRaycastOrigins", 0);
         controller.Invoke("VerticalCollisions", 0);
-        //Let's manually set collisions.below because it's acting screwy
-        controller.collisions.below = false;
 
         //let's set up our movement while hooked
         if (horizontal_input < 0)
@@ -173,6 +174,7 @@ public class GrapplingHook : MonoBehaviour
                 Player.GetComponent<HingeJoint2D>().anchor = anchor_point;
             }
             //Check if we're lowering through the floor, which is obviously not allowed
+            print(controller.collisions.below);
             if (Player.GetComponent<Controller2D>().collisions.below)
             {
                 exitRope();
