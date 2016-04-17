@@ -50,7 +50,6 @@ public class RaycastController : MonoBehaviour {
 		bounds.Expand (skinWidth * -2);
 
         //These 2 lines ensure that atleast 2 (the min value) rays are being fired in the horizontal & vertical directions
-        //Clamping more or less means constraining a value between a min and max.
         horizontalRayCount = Mathf.Clamp (horizontalRayCount, 2, int.MaxValue);
 		verticalRayCount = Mathf.Clamp (verticalRayCount, 2, int.MaxValue);
 		

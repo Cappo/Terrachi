@@ -46,16 +46,10 @@ public class Player : MonoBehaviour {
         // if we are grounded (controller.collisions.below = true) use acceleration time grounded, otherwise use airborne.
         velocity.x = Mathf.SmoothDamp (velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
 
-        
-        //If moving right (input.x > 0) and currently facing left (facedir == -1)  OR  If moving left (input.x < 0) and currently facing right (faceDir == 1) THEN:
-        if (input.x > 0 && controller.collisions.faceDir == -1 || input.x < 0 && controller.collisions.faceDir == 1)
-        {
 
-            //flip the player
-            Vector3 theScale = transform.localScale; //grab the local scale from the player and assign it to a Vector3 var
-            theScale.x = theScale.x * -1; //assign localScale to the opposite of it's current value 
-            transform.localScale = theScale; //set player's scale to be theScale 
-        }
+
+
+        
 
 
         //if the "Space" key is pressed 
@@ -82,6 +76,23 @@ public class Player : MonoBehaviour {
 
 	}
 }
+
+/*
+ void flip ( ref Controller2D controller, Vector2 input )
+{
+   
+    //If moving right (input.x > 0) and currently facing left (facedir == -1)  OR  If moving left (input.x < 0) and currently facing right (faceDir == 1) THEN:
+    if (input.x > 0 && controller.collisions.faceDir == -1 || input.x < 0 && controller.collisions.faceDir == 1)
+    {
+        //flip the player
+        Vector3 theScale = controller.transform.localScale; //grab the local scale from the player and assign it to a Vector3 var
+        theScale.x = theScale.x * -1; //assign localScale to the opposite of it's current value 
+        controller.transform.localScale = theScale; //set player's scale to be theScale 
+                                         //move player.
+    }
+
+}
+*/
 
 /* How the jump physics work:
  Known: jumpHeight, timeToJumpApex
