@@ -13737,11 +13737,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 486822, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 416.29
+      value: 113.9
       objectReference: {fileID: 0}
     - target: {fileID: 486822, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.08
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 486822, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13770,6 +13770,14 @@ Prefab:
     - target: {fileID: 166090, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
       propertyPath: m_Name
       value: KodamaPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493896, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
+      propertyPath: maxJumpHeight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493896, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
+      propertyPath: timeToJumpApex
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}

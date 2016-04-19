@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxJumpHeight: 5
   minJumpHeight: 1
-  timeToJumpApex: 0.4
+  timeToJumpApex: 0.45
   velocity: {x: 0, y: 0, z: 0}
 --- !u!114 &11495286
 MonoBehaviour:
@@ -152,7 +152,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: timeToJumpApex
+      value: 0.45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166090}
