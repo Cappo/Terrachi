@@ -1,0 +1,935 @@
+fileFormatVersion: 2
+guid: 4d1b2325dc7885348aee6f4629822540
+timeCreated: 1461034055
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tilesAll_0
+    21300002: tilesAll_1
+    21300004: tilesAll_2
+    21300006: tilesAll_3
+    21300008: tilesAll_4
+    21300010: tilesAll_5
+    21300012: tilesAll_6
+    21300014: tilesAll_7
+    21300016: tileA1
+    21300018: tileA2
+    21300020: tilesAll_10
+    21300022: tileB
+    21300024: tileA3
+    21300026: tileC
+    21300028: tileC2
+    21300030: tileD
+    21300032: tileE
+    21300034: tileF
+    21300036: tileG1
+    21300038: tileG2
+    21300040: tilesAll_20
+    21300042: tilesAll_21
+    21300044: tilesAll_22
+    21300046: tileH
+    21300048: tileI
+    21300050: tilesAll_25
+    21300052: tilesAll_26
+    21300054: tilesAll_27
+    21300056: tileD2
+    21300058: tileD3
+    21300060: tileJ1
+    21300062: tileJ2
+    21300064: tileD4
+    21300066: tileD5
+    21300068: tileD6
+    21300070: tileJ3
+    21300072: tileK
+    21300074: tileK2
+    21300076: ball
+    21300078: tileL
+    21300080: tileK3
+    21300082: tileM
+    21300084: tileN1
+    21300086: tileN2
+    21300088: tileO
+    21300090: tileP1
+    21300092: tileQ
+    21300094: tileR
+    21300096: tileO2
+    21300098: tileP2
+    21300100: tileQ2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 228
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tilesAll_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5376
+        width: 431
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.975204, y: 77.928955}
+        - {x: -75.975204, y: -75.071045}
+        - {x: -74.975204, y: -76.071045}
+        - {x: 76.024796, y: -76.071045}
+        - {x: 77.024796, y: -75.071045}
+        - {x: 77.024796, y: 77.928955}
+    - name: tilesAll_1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 5376
+        width: 434
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.39215, y: 77.928955}
+        - {x: -76.39215, y: -75.071045}
+        - {x: -75.39215, y: -76.071045}
+        - {x: 77.60785, y: -76.071045}
+        - {x: 77.60785, y: 77.928955}
+    - name: tilesAll_2
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 5376
+        width: 432
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.104126, y: 77.928955}
+        - {x: -76.104126, y: -75.071045}
+        - {x: -75.104126, y: -76.071045}
+        - {x: 75.895874, y: -76.071045}
+        - {x: 76.895874, y: -75.071045}
+        - {x: 76.895874, y: 77.928955}
+    - name: tilesAll_3
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 5379
+        width: 434
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.53677, y: 77.48633}
+        - {x: -76.53677, y: -74.51367}
+        - {x: -75.53677, y: -75.51367}
+        - {x: 76.46323, y: -75.51367}
+        - {x: 77.46323, y: -74.51367}
+        - {x: 77.46323, y: 77.48633}
+    - name: tilesAll_4
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 5379
+        width: 431
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.96942, y: 77.48633}
+        - {x: -75.96942, y: -74.51367}
+        - {x: -74.96942, y: -75.51367}
+        - {x: 76.03058, y: -75.51367}
+        - {x: 77.03058, y: -74.51367}
+        - {x: 77.03058, y: 77.48633}
+    - name: tilesAll_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4900
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.975204, y: 76.6488}
+        - {x: -75.975204, y: -76.3512}
+        - {x: 77.024796, y: -76.3512}
+        - {x: 77.024796, y: 76.6488}
+    - name: tilesAll_6
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 4900
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.89215, y: 76.6488}
+        - {x: -75.89215, y: -76.3512}
+        - {x: 77.10785, y: -76.3512}
+        - {x: 77.10785, y: 76.6488}
+    - name: tilesAll_7
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 4900
+        width: 434
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.54669, y: 77.1488}
+        - {x: -76.54669, y: 76.1488}
+        - {x: -76.54669, y: -75.8512}
+        - {x: -75.54669, y: -76.8512}
+        - {x: 77.45331, y: -76.8512}
+        - {x: 77.45331, y: 77.1488}
+    - name: tileA1
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4877
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.92975, y: 76.04175}
+        - {x: -75.92975, y: -75.95825}
+        - {x: 74.07025, y: -75.95825}
+        - {x: 75.07025, y: -74.95825}
+        - {x: 75.07025, y: 76.04175}
+    - name: tileA2
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 4860
+        width: 431
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.977295, y: 77.04956}
+        - {x: -75.977295, y: -76.95044}
+        - {x: 77.022705, y: -76.95044}
+        - {x: 77.022705, y: 77.04956}
+    - name: tilesAll_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4440
+        width: 431
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.975204, y: 76.5083}
+        - {x: -75.975204, y: -76.4917}
+        - {x: 77.024796, y: -76.4917}
+        - {x: 77.024796, y: 76.5083}
+    - name: tileB
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 4429
+        width: 434
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.50702, y: 77.13098}
+        - {x: -76.50702, y: -76.86902}
+        - {x: 77.49298, y: -76.86902}
+        - {x: 77.49298, y: 77.13098}
+    - name: tileA3
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 4421
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.93182, y: 76.81116}
+        - {x: -75.93182, y: -76.18884}
+        - {x: 77.06818, y: -76.18884}
+        - {x: 77.06818, y: 76.81116}
+    - name: tileC
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 4418
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.98718, y: -76.24634}
+        - {x: 77.01282, y: -76.24634}
+        - {x: 77.01282, y: 76.75366}
+        - {x: 73.01282, y: 76.75366}
+        - {x: -75.98718, y: -73.24634}
+    - name: tileC2
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 4418
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.14172, y: 76.75366}
+        - {x: -76.14172, y: -76.24634}
+        - {x: 76.85828, y: -76.24634}
+        - {x: 76.85828, y: -73.24634}
+        - {x: -69.14172, y: 76.75366}
+    - name: tileD
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3955
+        width: 430
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76, y: 76.555786}
+        - {x: -76, y: -76.444214}
+        - {x: 76, y: -76.444214}
+        - {x: 76, y: 76.555786}
+    - name: tileE
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 3953
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.07231, y: 76.85083}
+        - {x: -76.07231, y: -76.14917}
+        - {x: 76.92769, y: -76.14917}
+        - {x: 76.92769, y: 76.85083}
+    - name: tileF
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 3941
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.92273, y: 76.62109}
+        - {x: -75.92273, y: -76.37891}
+        - {x: 72.07727, y: -76.37891}
+        - {x: 73.07727, y: -75.37891}
+        - {x: 73.07727, y: 75.62109}
+        - {x: 72.07727, y: 76.62109}
+    - name: tileG1
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 3941
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.16736, y: 76.62109}
+        - {x: -76.16736, y: -76.37891}
+        - {x: 76.83264, y: -76.37891}
+        - {x: 76.83264, y: 76.62109}
+    - name: tileG2
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 3941
+        width: 430
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.5661, y: 76.62109}
+        - {x: -75.5661, y: -76.37891}
+        - {x: 76.4339, y: -76.37891}
+        - {x: 76.4339, y: 76.62109}
+    - name: tilesAll_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3459
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62.86818, y: 76.726074}
+        - {x: -75.86818, y: 54.726074}
+        - {x: -75.86818, y: -53.273926}
+        - {x: -59.86818, y: -74.273926}
+        - {x: -49.86818, y: -76.273926}
+        - {x: 77.13182, y: -76.273926}
+        - {x: 77.13182, y: 76.726074}
+    - name: tilesAll_21
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 3459
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.973145, y: 76.726074}
+        - {x: -75.973145, y: -76.273926}
+        - {x: 77.026855, y: -76.273926}
+        - {x: 77.026855, y: 76.726074}
+    - name: tilesAll_22
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 3459
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.078094, y: 76.726074}
+        - {x: -76.078094, y: -76.273926}
+        - {x: 64.921906, y: -76.273926}
+        - {x: 76.921906, y: -58.273926}
+        - {x: 76.921906, y: 60.726074}
+        - {x: 63.921906, y: 76.726074}
+    - name: tileH
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 3159
+        width: 432
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.1413, y: 76.98218}
+        - {x: -76.1413, y: -76.01782}
+        - {x: 76.8587, y: -76.01782}
+        - {x: 76.8587, y: 76.98218}
+    - name: tileI
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 3161
+        width: 430
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.5661, y: 76.68713}
+        - {x: -75.5661, y: -76.31287}
+        - {x: 76.4339, y: -76.31287}
+        - {x: 76.4339, y: 76.68713}
+    - name: tilesAll_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3158
+        width: 431
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61.92562, y: 39.12976}
+        - {x: -75.92562, y: 27.12976}
+        - {x: -75.92562, y: -29.87024}
+        - {x: -58.92562, y: -38.87024}
+        - {x: 77.07438, y: -38.87024}
+        - {x: 77.07438, y: 39.12976}
+    - name: tilesAll_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3158
+        width: 431
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.03058, y: 39.12976}
+        - {x: -76.03058, y: -38.87024}
+        - {x: 76.96942, y: -38.87024}
+        - {x: 76.96942, y: 39.12976}
+    - name: tilesAll_27
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 3158
+        width: 432
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.13553, y: 39.12976}
+        - {x: -76.13553, y: -38.87024}
+        - {x: 60.86447, y: -38.87024}
+        - {x: 76.86447, y: -28.87024}
+        - {x: 76.86447, y: 29.12976}
+        - {x: 61.86447, y: 39.12976}
+    - name: tileD2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2634
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.89421, y: 76.9306}
+        - {x: 34.89421, y: 70.9306}
+        - {x: -30.10579, y: 76.9306}
+        - {x: -76.10579, y: 76.9306}
+        - {x: -76.10579, y: -76.0694}
+        - {x: 76.89421, y: -76.0694}
+        - {x: 76.89421, y: 76.9306}
+    - name: tileD3
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 2631
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77.52934, y: 76.87317}
+        - {x: -76.47066, y: 76.87317}
+        - {x: -76.47066, y: -76.12683}
+        - {x: -36.470657, y: -76.12683}
+        - {x: -33.470657, y: -69.12683}
+        - {x: 31.529343, y: -76.12683}
+        - {x: 77.52934, y: -76.12683}
+    - name: tileJ1
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 2590
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.130585, y: 77.42151}
+        - {x: -76.130585, y: -72.57849}
+        - {x: -75.130585, y: -73.57849}
+        - {x: 75.869415, y: -73.57849}
+        - {x: 76.869415, y: -72.57849}
+        - {x: 76.869415, y: 77.42151}
+    - name: tileJ2
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 2597
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.12854, y: 76.888855}
+        - {x: -76.12854, y: -76.111145}
+        - {x: 76.87146, y: -76.111145}
+        - {x: 76.87146, y: 76.888855}
+    - name: tileD4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2098
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.16322, y: 77.00165}
+        - {x: -76.16322, y: 51.001648}
+        - {x: -69.16322, y: 48.001648}
+        - {x: -76.16322, y: -25.998352}
+        - {x: -76.16322, y: -75.99835}
+        - {x: 76.83678, y: -75.99835}
+        - {x: 76.83678, y: 77.00165}
+    - name: tileD5
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2098
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.84793, y: 77.00165}
+        - {x: -75.84793, y: -75.99835}
+        - {x: 77.15207, y: -75.99835}
+        - {x: 77.15207, y: 77.00165}
+    - name: tileD6
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 2098
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.02603, y: 77.00165}
+        - {x: -76.02603, y: -75.99835}
+        - {x: 76.97397, y: -75.99835}
+        - {x: 76.97397, y: 77.00165}
+    - name: tileJ3
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 2106
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.12854, y: 76.82147}
+        - {x: -76.12854, y: -76.17853}
+        - {x: 76.87146, y: -76.17853}
+        - {x: 76.87146, y: 76.82147}
+    - name: tileK
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1388
+        width: 434
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.40744, y: 76.74133}
+        - {x: -76.40744, y: -76.25867}
+        - {x: 77.59256, y: -76.25867}
+        - {x: 77.59256, y: 76.74133}
+    - name: tileK2
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1388
+        width: 432
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.109085, y: 76.74133}
+        - {x: -76.109085, y: -76.25867}
+        - {x: 76.890915, y: -76.25867}
+        - {x: 76.890915, y: 76.74133}
+    - name: ball
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1391
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.934723, y: 76.79877}
+        - {x: -75.93472, y: 57.798767}
+        - {x: -75.93472, y: -47.201233}
+        - {x: -42.934723, y: -76.20123}
+        - {x: 40.065277, y: -76.20123}
+        - {x: 53.065277, y: -70.20123}
+        - {x: 77.06528, y: -55.201233}
+        - {x: 77.06528, y: 60.798767}
+        - {x: 53.065277, y: 76.79877}
+    - name: tileL
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1380
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.61157, y: 76.92148}
+        - {x: -75.61157, y: -76.07852}
+        - {x: 75.38843, y: -76.07852}
+        - {x: 76.38843, y: -75.07852}
+        - {x: 76.38843, y: 75.92148}
+        - {x: 75.38843, y: 76.92148}
+    - name: tileK3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 787
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.40744, y: 76.901245}
+        - {x: -76.40744, y: -76.098755}
+        - {x: 77.59256, y: -76.098755}
+        - {x: 77.59256, y: 76.901245}
+    - name: tileM
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 787
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.85579, y: 76.901245}
+        - {x: -75.85579, y: -76.098755}
+        - {x: 77.14421, y: -76.098755}
+        - {x: 77.14421, y: 76.901245}
+    - name: tileN1
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 787
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.98181, y: 76.901245}
+        - {x: -75.98181, y: -76.098755}
+        - {x: 77.01819, y: -76.098755}
+        - {x: 77.01819, y: 76.901245}
+    - name: tileN2
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 787
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.045044, y: 76.901245}
+        - {x: -76.045044, y: -76.098755}
+        - {x: 76.954956, y: -76.098755}
+        - {x: 76.954956, y: 76.901245}
+    - name: tileO
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 277
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71.964874, y: 77.13678}
+        - {x: -75.964874, y: 74.13678}
+        - {x: -75.964874, y: -74.86322}
+        - {x: -72.964874, y: -75.86322}
+        - {x: 74.035126, y: -75.86322}
+        - {x: 77.035126, y: -71.86322}
+        - {x: 77.035126, y: 77.13678}
+    - name: tileP1
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 271
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.02025, y: 77.021904}
+        - {x: -76.02025, y: 73.021904}
+        - {x: -76.02025, y: -70.978096}
+        - {x: -72.02025, y: -75.978096}
+        - {x: 71.97975, y: -75.978096}
+        - {x: 76.97975, y: -70.978096}
+        - {x: 76.97975, y: 73.021904}
+        - {x: 72.97975, y: 77.021904}
+    - name: tileQ
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 268
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71.01819, y: 76.96446}
+        - {x: -73.01819, y: 75.96446}
+        - {x: -76.01819, y: 71.96446}
+        - {x: -76.01819, y: -71.03554}
+        - {x: -72.01819, y: -76.03554}
+        - {x: 73.98181, y: -76.03554}
+        - {x: 76.98181, y: -75.03554}
+        - {x: 76.98181, y: 72.96446}
+        - {x: 71.98181, y: 76.96446}
+    - name: tileR
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 285
+        width: 434
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.557007, y: 77.45661}
+        - {x: -64.44299, y: 77.45661}
+        - {x: -76.44299, y: 71.45661}
+        - {x: -76.44299, y: -76.54339}
+        - {x: 58.557007, y: -76.54339}
+        - {x: 61.557007, y: -70.54339}
+        - {x: 77.55701, y: -52.54339}
+        - {x: 77.55701, y: 54.45661}
+    - name: tileO2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 431
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.964874, y: 38.5}
+        - {x: -75.964874, y: -38.5}
+        - {x: 77.035126, y: -38.5}
+        - {x: 77.035126, y: 38.5}
+    - name: tileP2
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 7
+        width: 431
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.07768, y: 37.967354}
+        - {x: -76.07768, y: 36.967354}
+        - {x: -76.07768, y: -38.032646}
+        - {x: 76.92232, y: -38.032646}
+        - {x: 76.92232, y: 36.967354}
+        - {x: 74.92232, y: 37.967354}
+    - name: tileQ2
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 0
+        width: 432
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.13306, y: 38.5}
+        - {x: -76.13306, y: -38.5}
+        - {x: 76.86694, y: -38.5}
+        - {x: 76.86694, y: 36.5}
+        - {x: 75.86694, y: 38.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
