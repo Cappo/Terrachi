@@ -26,8 +26,24 @@ public class Player : MonoBehaviour {
 
 	Controller2D controller; //reference to the controller component attached to our player GameObject.
 
+    void Awake() {
+        
+    }
+
     void Start() {
-		controller = GetComponent<Controller2D> ();
+        SaveLoad.Load();
+        Checkpoint.CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
+
+        if (SaveLoad.save.checkpoint != "")
+        {
+            Checkpoint cp = GameObject.Find(SaveLoad.save.checkpoint).GetComponent<Checkpoint>();
+
+            cp.activated = true;
+
+            this.Respawn();
+        }
+
+        controller = GetComponent<Controller2D> ();
 
         //set up jump physics
 		gravity = -(2 * maxJumpHeight) / Mathf.Pow (timeToJumpApex, 2);
@@ -69,7 +85,21 @@ public class Player : MonoBehaviour {
 			velocity.y = 0;
 		}
 
+        //Test "death" scenario, can be removed later
+        if (transform.position.y < -100)
+        {
+            this.Respawn();
+            
+        }
 	}
+
+    void Respawn()
+    {
+        Vector3 respawnPoint = Checkpoint.GetActiveCheckpointPosition();
+        respawnPoint.y += 5;
+        velocity = Vector3.zero;
+        transform.position = respawnPoint;
+    }
 }
 
 /* How the jump physics work:
