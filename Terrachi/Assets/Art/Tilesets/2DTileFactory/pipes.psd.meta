@@ -1,7 +1,21 @@
 fileFormatVersion: 2
 guid: 38aa5e1e63de343a988959f9a71355dc
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pipes_0
+    21300002: pipes_1
+    21300004: pipes_2
+    21300006: pipes_3
+    21300008: pipes_4
+    21300010: pipes_5
+    21300012: pipes_6
+    21300014: pipes_7
+    21300016: pipes_8
+    21300018: pipes_9
+    21300020: pipes_10
+    21300022: pipes_11
+    21300024: pipes_12
+    21300026: pipes_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,7 +72,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: 23}
+        - {x: -61, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: 26}
+        - {x: 64, y: 64}
     - name: pipes_1
       rect:
         serializedVersion: 2
@@ -69,7 +89,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: 23}
+        - {x: -61, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: 26}
+        - {x: 64, y: 64}
     - name: pipes_2
       rect:
         serializedVersion: 2
@@ -80,7 +106,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: 23}
+        - {x: -61, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: 26}
+        - {x: 64, y: 64}
     - name: pipes_3
       rect:
         serializedVersion: 2
@@ -91,7 +123,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: 24}
+        - {x: -61, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: 28}
+        - {x: 64, y: 64}
     - name: pipes_4
       rect:
         serializedVersion: 2
@@ -102,7 +140,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -58, y: 64}
+        - {x: -58, y: -64}
+        - {x: 58, y: -64}
+        - {x: 58, y: 64}
     - name: pipes_5
       rect:
         serializedVersion: 2
@@ -113,7 +155,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -58, y: 64}
+        - {x: -58, y: -64}
+        - {x: 58, y: -64}
+        - {x: 58, y: 64}
     - name: pipes_6
       rect:
         serializedVersion: 2
@@ -124,7 +170,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -58, y: 64}
+        - {x: -58, y: -64}
+        - {x: 58, y: -64}
+        - {x: 58, y: 64}
     - name: pipes_7
       rect:
         serializedVersion: 2
@@ -135,7 +185,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -58.5, y: 64}
+        - {x: -58.5, y: -64}
+        - {x: 58.5, y: -64}
+        - {x: 58.5, y: 64}
     - name: pipes_8
       rect:
         serializedVersion: 2
@@ -146,7 +200,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -3}
+        - {x: -61, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: 0}
+        - {x: 64, y: 64}
     - name: pipes_9
       rect:
         serializedVersion: 2
@@ -157,7 +217,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -3}
+        - {x: -61, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: 0}
+        - {x: 64, y: 64}
     - name: pipes_10
       rect:
         serializedVersion: 2
@@ -168,7 +234,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -3}
+        - {x: -61, y: -64}
+        - {x: 60, y: -64}
+        - {x: 64, y: 0}
+        - {x: 64, y: 64}
     - name: pipes_11
       rect:
         serializedVersion: 2
@@ -179,7 +251,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -58.5, y: 64}
+        - {x: -58.5, y: -64}
+        - {x: 58.5, y: -64}
+        - {x: 58.5, y: 64}
     - name: pipes_12
       rect:
         serializedVersion: 2
@@ -190,7 +266,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -58.5, y: 64}
+        - {x: -58.5, y: -64}
+        - {x: 58.5, y: -64}
+        - {x: 58.5, y: 64}
     - name: pipes_13
       rect:
         serializedVersion: 2
@@ -201,7 +281,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -58.5, y: 64}
+        - {x: -58.5, y: -64}
+        - {x: 58.5, y: -64}
+        - {x: 58.5, y: 64}
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,7 +1,100 @@
 fileFormatVersion: 2
 guid: 577585e9ced454b888ad6e4dcf62a6b8
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: 2d-tile-factory_0
+    21300002: 2d-tile-factory_1
+    21300004: 2d-tile-factory_2
+    21300006: 2d-tile-factory_3
+    21300008: 2d-tile-factory_4
+    21300010: 2d-tile-factory_5
+    21300012: 2d-tile-factory_6
+    21300014: 2d-tile-factory_7
+    21300016: 2d-tile-factory_8
+    21300018: 2d-tile-factory_9
+    21300020: 2d-tile-factory_10
+    21300022: 2d-tile-factory_11
+    21300024: 2d-tile-factory_12
+    21300026: 2d-tile-factory_13
+    21300028: 2d-tile-factory_14
+    21300030: 2d-tile-factory_15
+    21300032: 2d-tile-factory_16
+    21300034: 2d-tile-factory_17
+    21300036: 2d-tile-factory_18
+    21300038: 2d-tile-factory_19
+    21300040: 2d-tile-factory_20
+    21300042: 2d-tile-factory_21
+    21300044: 2d-tile-factory_22
+    21300046: 2d-tile-factory_23
+    21300048: 2d-tile-factory_24
+    21300050: 2d-tile-factory_25
+    21300052: 2d-tile-factory_26
+    21300054: 2d-tile-factory_27
+    21300056: 2d-tile-factory_28
+    21300058: 2d-tile-factory_29
+    21300060: 2d-tile-factory_30
+    21300062: 2d-tile-factory_31
+    21300064: 2d-tile-factory_32
+    21300066: 2d-tile-factory_33
+    21300068: 2d-tile-factory_34
+    21300070: 2d-tile-factory_35
+    21300072: 2d-tile-factory_36
+    21300074: 2d-tile-factory_37
+    21300076: 2d-tile-factory_38
+    21300078: 2d-tile-factory_39
+    21300080: 2d-tile-factory_40
+    21300082: 2d-tile-factory_41
+    21300084: 2d-tile-factory_42
+    21300086: 2d-tile-factory_43
+    21300088: 2d-tile-factory_44
+    21300090: 2d-tile-factory_45
+    21300092: 2d-tile-factory_46
+    21300094: 2d-tile-factory_47
+    21300096: 2d-tile-factory_48
+    21300098: 2d-tile-factory_49
+    21300100: 2d-tile-factory_50
+    21300102: 2d-tile-factory_51
+    21300104: 2d-tile-factory_52
+    21300106: 2d-tile-factory_53
+    21300108: 2d-tile-factory_54
+    21300110: 2d-tile-factory_55
+    21300112: 2d-tile-factory_56
+    21300114: 2d-tile-factory_57
+    21300116: 2d-tile-factory_58
+    21300118: 2d-tile-factory_59
+    21300120: 2d-tile-factory_60
+    21300122: 2d-tile-factory_61
+    21300124: 2d-tile-factory_62
+    21300126: 2d-tile-factory_63
+    21300128: 2d-tile-factory_64
+    21300130: 2d-tile-factory_65
+    21300132: 2d-tile-factory_66
+    21300134: 2d-tile-factory_67
+    21300136: 2d-tile-factory_68
+    21300138: 2d-tile-factory_69
+    21300140: 2d-tile-factory_70
+    21300142: 2d-tile-factory_71
+    21300144: 2d-tile-factory_72
+    21300146: 2d-tile-factory_73
+    21300148: 2d-tile-factory_74
+    21300150: 2d-tile-factory_75
+    21300152: 2d-tile-factory_76
+    21300154: 2d-tile-factory_77
+    21300156: 2d-tile-factory_78
+    21300158: 2d-tile-factory_79
+    21300160: 2d-tile-factory_80
+    21300162: 2d-tile-factory_81
+    21300164: 2d-tile-factory_82
+    21300166: 2d-tile-factory_83
+    21300168: 2d-tile-factory_84
+    21300170: 2d-tile-factory_85
+    21300172: 2d-tile-factory_86
+    21300174: 2d-tile-factory_87
+    21300176: 2d-tile-factory_88
+    21300178: 2d-tile-factory_89
+    21300180: 2d-tile-factory_90
+    21300182: 2d-tile-factory_91
+    21300184: 2d-tile-factory_92
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,7 +151,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: 2d-tile-factory_1
       rect:
         serializedVersion: 2
@@ -69,7 +166,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: 2d-tile-factory_2
       rect:
         serializedVersion: 2
@@ -80,7 +181,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
     - name: 2d-tile-factory_3
       rect:
         serializedVersion: 2
@@ -91,7 +196,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_4
       rect:
         serializedVersion: 2
@@ -102,7 +211,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 32}
     - name: 2d-tile-factory_5
       rect:
         serializedVersion: 2
@@ -113,7 +226,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 32}
     - name: 2d-tile-factory_6
       rect:
         serializedVersion: 2
@@ -124,7 +241,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_7
       rect:
         serializedVersion: 2
@@ -135,7 +256,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 16}
+        - {x: -32, y: -16}
+        - {x: 32, y: -16}
+        - {x: 32, y: 16}
     - name: 2d-tile-factory_8
       rect:
         serializedVersion: 2
@@ -146,7 +271,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: 2d-tile-factory_9
       rect:
         serializedVersion: 2
@@ -157,7 +286,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_10
       rect:
         serializedVersion: 2
@@ -168,7 +301,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 16}
+        - {x: -32, y: -16}
+        - {x: 32, y: -16}
+        - {x: 32, y: 16}
     - name: 2d-tile-factory_11
       rect:
         serializedVersion: 2
@@ -179,7 +316,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
     - name: 2d-tile-factory_12
       rect:
         serializedVersion: 2
@@ -190,7 +331,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_13
       rect:
         serializedVersion: 2
@@ -201,7 +346,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_14
       rect:
         serializedVersion: 2
@@ -212,7 +361,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_15
       rect:
         serializedVersion: 2
@@ -223,7 +376,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_16
       rect:
         serializedVersion: 2
@@ -234,7 +391,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_17
       rect:
         serializedVersion: 2
@@ -245,7 +406,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_18
       rect:
         serializedVersion: 2
@@ -256,7 +421,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_19
       rect:
         serializedVersion: 2
@@ -267,7 +436,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_20
       rect:
         serializedVersion: 2
@@ -278,7 +451,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_21
       rect:
         serializedVersion: 2
@@ -289,7 +466,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_22
       rect:
         serializedVersion: 2
@@ -300,7 +481,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_23
       rect:
         serializedVersion: 2
@@ -311,7 +496,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_24
       rect:
         serializedVersion: 2
@@ -322,7 +511,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_25
       rect:
         serializedVersion: 2
@@ -333,7 +526,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_26
       rect:
         serializedVersion: 2
@@ -344,7 +541,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_27
       rect:
         serializedVersion: 2
@@ -355,7 +556,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_28
       rect:
         serializedVersion: 2
@@ -366,7 +571,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_29
       rect:
         serializedVersion: 2
@@ -377,7 +586,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_30
       rect:
         serializedVersion: 2
@@ -388,7 +601,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_31
       rect:
         serializedVersion: 2
@@ -399,7 +616,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_32
       rect:
         serializedVersion: 2
@@ -410,7 +631,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_33
       rect:
         serializedVersion: 2
@@ -421,7 +646,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_34
       rect:
         serializedVersion: 2
@@ -432,7 +661,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_35
       rect:
         serializedVersion: 2
@@ -443,7 +676,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_36
       rect:
         serializedVersion: 2
@@ -454,7 +691,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_37
       rect:
         serializedVersion: 2
@@ -465,7 +706,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_38
       rect:
         serializedVersion: 2
@@ -476,7 +721,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_39
       rect:
         serializedVersion: 2
@@ -487,7 +736,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_40
       rect:
         serializedVersion: 2
@@ -498,7 +751,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_41
       rect:
         serializedVersion: 2
@@ -509,7 +766,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_42
       rect:
         serializedVersion: 2
@@ -520,7 +781,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_43
       rect:
         serializedVersion: 2
@@ -531,7 +796,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_44
       rect:
         serializedVersion: 2
@@ -542,7 +811,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_45
       rect:
         serializedVersion: 2
@@ -553,7 +826,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_46
       rect:
         serializedVersion: 2
@@ -564,7 +841,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_47
       rect:
         serializedVersion: 2
@@ -575,7 +856,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_48
       rect:
         serializedVersion: 2
@@ -586,7 +871,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_49
       rect:
         serializedVersion: 2
@@ -597,7 +886,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 29}
+        - {x: -32, y: -29}
+        - {x: 32, y: -29}
+        - {x: 32, y: 29}
     - name: 2d-tile-factory_50
       rect:
         serializedVersion: 2
@@ -608,7 +901,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_51
       rect:
         serializedVersion: 2
@@ -619,7 +916,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 29}
+        - {x: -32, y: -29}
+        - {x: 32, y: -29}
+        - {x: 32, y: 29}
     - name: 2d-tile-factory_52
       rect:
         serializedVersion: 2
@@ -652,7 +953,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 20}
+        - {x: -32, y: -11}
+        - {x: -31, y: -20}
+        - {x: 28, y: -20}
+        - {x: 32, y: -9}
+        - {x: 32, y: 20}
     - name: 2d-tile-factory_55
       rect:
         serializedVersion: 2
@@ -685,7 +992,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 16.5}
+        - {x: -32, y: -16.5}
+        - {x: 29, y: -16.5}
+        - {x: 32, y: -13.5}
+        - {x: 32, y: 16.5}
     - name: 2d-tile-factory_58
       rect:
         serializedVersion: 2
@@ -751,7 +1063,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -24, y: 31.5}
+        - {x: -32, y: 28.5}
+        - {x: -32, y: -28.5}
+        - {x: -30, y: -31.5}
+        - {x: 28, y: -31.5}
+        - {x: 32, y: -27.5}
+        - {x: 32, y: 31.5}
     - name: 2d-tile-factory_64
       rect:
         serializedVersion: 2
@@ -762,7 +1081,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -31.5, y: 31.5}
+        - {x: -31.5, y: -25.5}
+        - {x: -30.5, y: -31.5}
+        - {x: 27.5, y: -31.5}
+        - {x: 31.5, y: -24.5}
+        - {x: 31.5, y: 30.5}
+        - {x: 28.5, y: 31.5}
     - name: 2d-tile-factory_65
       rect:
         serializedVersion: 2
@@ -795,7 +1121,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -20}
+        - {x: -29, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_68
       rect:
         serializedVersion: 2
@@ -806,7 +1137,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_69
       rect:
         serializedVersion: 2
@@ -817,7 +1152,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_70
       rect:
         serializedVersion: 2
@@ -828,7 +1168,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -19}
+        - {x: -27, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_71
       rect:
         serializedVersion: 2
@@ -839,7 +1184,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_72
       rect:
         serializedVersion: 2
@@ -850,7 +1199,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 28, y: -32}
+        - {x: 32, y: -20}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_73
       rect:
         serializedVersion: 2
@@ -861,7 +1215,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_74
       rect:
         serializedVersion: 2
@@ -872,7 +1230,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_75
       rect:
         serializedVersion: 2
@@ -883,7 +1245,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_76
       rect:
         serializedVersion: 2
@@ -894,7 +1260,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_77
       rect:
         serializedVersion: 2
@@ -905,7 +1275,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_78
       rect:
         serializedVersion: 2
@@ -916,7 +1290,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_79
       rect:
         serializedVersion: 2
@@ -927,7 +1305,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_80
       rect:
         serializedVersion: 2
@@ -938,7 +1320,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_81
       rect:
         serializedVersion: 2
@@ -949,7 +1335,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_82
       rect:
         serializedVersion: 2
@@ -960,7 +1350,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_83
       rect:
         serializedVersion: 2
@@ -971,7 +1365,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_84
       rect:
         serializedVersion: 2
@@ -982,7 +1380,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_85
       rect:
         serializedVersion: 2
@@ -993,7 +1395,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_86
       rect:
         serializedVersion: 2
@@ -1004,7 +1410,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_87
       rect:
         serializedVersion: 2
@@ -1015,7 +1425,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_88
       rect:
         serializedVersion: 2
@@ -1026,7 +1440,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_89
       rect:
         serializedVersion: 2
@@ -1037,7 +1455,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_90
       rect:
         serializedVersion: 2
@@ -1048,7 +1470,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_91
       rect:
         serializedVersion: 2
@@ -1059,7 +1485,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     - name: 2d-tile-factory_92
       rect:
         serializedVersion: 2
@@ -1070,7 +1500,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
     outline: []
   spritePackingTag: 
   userData: 
