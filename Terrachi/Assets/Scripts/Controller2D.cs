@@ -2,20 +2,25 @@
 using System.Collections;
 
 public class Controller2D : RaycastController {
-	
+
 	float maxClimbAngle = 80;
 	float maxDescendAngle = 80;
-	
+
 	public CollisionInfo collisions;
 	[HideInInspector]
 	public Vector2 playerInput;
-	
+
 	public override void Start() {
 		base.Start ();
 		collisions.faceDir = 1; //player starts facing right
 
 	}
-	
+
+    public void Move()
+    {
+        Move(Vector3.zero, Vector2.zero);
+    }
+
 	public void Move(Vector3 velocity, bool standingOnPlatform) {
 		Move (velocity, Vector2.zero, standingOnPlatform);
 	}
@@ -43,6 +48,7 @@ public class Controller2D : RaycastController {
 
 		if (standingOnPlatform) {
 			collisions.below = true;
+            //print("Standing on platform");
 		}
 	}
 
@@ -53,7 +59,7 @@ public class Controller2D : RaycastController {
 		if (Mathf.Abs(velocity.x) < skinWidth) {
 			rayLength = 2*skinWidth;
 		}
-		
+
 		for (int i = 0; i < horizontalRayCount; i ++) {
 			Vector2 rayOrigin = (directionX == -1)?raycastOrigins.bottomLeft:raycastOrigins.bottomRight;
 			rayOrigin += Vector2.up * (horizontalRaySpacing * i);
@@ -66,7 +72,7 @@ public class Controller2D : RaycastController {
 				if (hit.distance == 0) {
 					continue;
 				}
-			
+
 				float slopeAngle = Vector2.Angle(hit.normal, Vector2.up);
 
 				if (i == 0 && slopeAngle <= maxClimbAngle) {
@@ -97,7 +103,17 @@ public class Controller2D : RaycastController {
 			}
 		}
 	}
-	
+
+    void VerticalCollisions()
+    {
+        Vector3 dummy_velocity = Vector3.down * .1F;
+				//Manually set collisions.below because we have to.
+				//oh my god this took so much effort to find the correct place to do this
+				collisions.below = false;
+        VerticalCollisions(ref dummy_velocity);
+
+    }
+
 	void VerticalCollisions(ref Vector3 velocity) {
 		float directionY = Mathf.Sign (velocity.y);
 		float rayLength = Mathf.Abs (velocity.y) + skinWidth;
@@ -133,6 +149,7 @@ public class Controller2D : RaycastController {
 				}
 
 				collisions.below = directionY == -1;
+                //print("Collisions below set to " + collisions.below + " in VerticalCollisions");
 				collisions.above = directionY == 1;
 			}
 		}
@@ -161,6 +178,7 @@ public class Controller2D : RaycastController {
 			velocity.y = climbVelocityY;
 			velocity.x = Mathf.Cos (slopeAngle * Mathf.Deg2Rad) * moveDistance * Mathf.Sign (velocity.x);
 			collisions.below = true;
+            //print("Climb slope collision");
 			collisions.climbingSlope = true;
 			collisions.slopeAngle = slopeAngle;
 		}
@@ -184,6 +202,7 @@ public class Controller2D : RaycastController {
 						collisions.slopeAngle = slopeAngle;
 						collisions.descendingSlope = true;
 						collisions.below = true;
+                        //print("Descend slope collision");
 					}
 				}
 			}
@@ -193,6 +212,17 @@ public class Controller2D : RaycastController {
 	void ResetFallingThroughPlatform() {
 		collisions.fallingThroughPlatform = false;
 	}
+
+    //This is only used when grappling
+    /*void OnCollisionEnter2D(Collision2D col)
+    {
+        GameObject grappling_hook = GameObject.Find("Grappling Hook");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (grappling_hook.GetComponent<Rigidbody2D>().isKinematic == false)
+        {
+            grappling_hook.GetComponent<GrapplingHook>().Invoke("exitRope", 0);
+        }
+    }*/
 
 	public struct CollisionInfo {
 		public bool above, below;

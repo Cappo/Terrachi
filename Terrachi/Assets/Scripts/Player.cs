@@ -27,8 +27,24 @@ public class Player : MonoBehaviour {
 	Controller2D controller; //reference to the controller component attached to our player GameObject.
     private Animator animator; //create a variable to store a reference the Animator on the player
 
+    void Awake() {
+        
+    }
+
     void Start() {
 		controller = GetComponent<Controller2D> ();
+        SaveLoad.Load();
+        Checkpoint.CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
+
+        if (SaveLoad.save.checkpoint != "")
+        {
+            Checkpoint cp = GameObject.Find(SaveLoad.save.checkpoint).GetComponent<Checkpoint>();
+
+            cp.activated = true;
+
+            this.Respawn();
+        }
+
         animator = GetComponent<Animator>(); //assign the Animator component on the player gameobject to our new reference var. 
 
         //set up jump physics
@@ -74,7 +90,21 @@ public class Player : MonoBehaviour {
 			velocity.y = 0;
 		}
 
+        //Test "death" scenario, can be removed later
+        if (transform.position.y < -100)
+        {
+            this.Respawn();
+            
+        }
 	}
+
+    void Respawn()
+    {
+        Vector3 respawnPoint = Checkpoint.GetActiveCheckpointPosition();
+        respawnPoint.y += 5;
+        velocity = Vector3.zero;
+        transform.position = respawnPoint;
+    }
 }
 
 /*
