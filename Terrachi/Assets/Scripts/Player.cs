@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
         SaveLoad.Load();
         Checkpoint.CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
 
-        /*
+        
         if (SaveLoad.save.checkpoint != "")
         {
             Checkpoint cp = GameObject.Find(SaveLoad.save.checkpoint).GetComponent<Checkpoint>();
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour {
             cp.activated = true;
 
             this.Respawn();
-        } */
+        } 
 
         animator = GetComponent<Animator>(); //assign the Animator component on the player gameobject to our new reference var. 
 
