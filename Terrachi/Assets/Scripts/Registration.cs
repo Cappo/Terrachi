@@ -11,7 +11,7 @@ public class Registration : MonoBehaviour {
 
     private bool checkedYet;
 
-    readonly private string firstLevel = "LevelOneAlpha";
+    readonly private string startMenuScene = "StartMenu";
 
     readonly private string RegisterURL = "http://terrachi.azurewebsites.net/activate.php";
 
@@ -27,7 +27,7 @@ public class Registration : MonoBehaviour {
         SaveLoad.Load();
         if (SaveLoad.save.registered == true && SaveLoad.save.uid == SystemInfo.deviceUniqueIdentifier)
         {
-            SceneManager.LoadScene(SaveLoad.save.currentLevel);
+            SceneManager.LoadScene(startMenuScene);
         }
 
         checkedYet = true;
@@ -74,9 +74,9 @@ public class Registration : MonoBehaviour {
             else {
                 SaveLoad.save.registered = true;
                 SaveLoad.save.uid = SystemInfo.deviceUniqueIdentifier;
-                SaveLoad.save.currentLevel = firstLevel;
+                //SaveLoad.save.currentLevel = startMenuScene;
                 SaveLoad.Save();
-                SceneManager.LoadScene(SaveLoad.save.currentLevel);
+                SceneManager.LoadScene(startMenuScene);
             }
         }
     }
