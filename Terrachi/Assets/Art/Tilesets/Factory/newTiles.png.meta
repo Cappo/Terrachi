@@ -1,0 +1,1026 @@
+fileFormatVersion: 2
+guid: 2433f050ba37ac74ca4e79895c14136e
+timeCreated: 1461435571
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: newTiles_0
+    21300002: newTiles_1
+    21300004: newTiles_2
+    21300006: newTiles_3
+    21300008: newTiles_4
+    21300010: newTiles_5
+    21300012: newTiles_6
+    21300014: newTiles_7
+    21300016: newTiles_8
+    21300018: newTiles_9
+    21300020: newTiles_10
+    21300022: newTiles_11
+    21300024: newTiles_12
+    21300026: newTiles_13
+    21300028: newTiles_14
+    21300030: newTiles_15
+    21300032: newTiles_16
+    21300034: newTiles_17
+    21300036: newTiles_18
+    21300038: newTiles_19
+    21300040: newTiles_20
+    21300042: newTiles_21
+    21300044: newTiles_22
+    21300046: newTiles_23
+    21300048: newTiles_24
+    21300050: newTiles_25
+    21300052: newTiles_26
+    21300054: newTiles_27
+    21300056: newTiles_28
+    21300058: newTiles_29
+    21300060: newTiles_30
+    21300062: newTiles_31
+    21300064: newTiles_32
+    21300066: newTiles_33
+    21300068: newTiles_34
+    21300070: newTiles_35
+    21300072: newTiles_36
+    21300074: newTiles_37
+    21300076: newTiles_38
+    21300078: newTiles_39
+    21300080: newTiles_40
+    21300082: newTiles_41
+    21300084: newTiles_42
+    21300086: newTiles_43
+    21300088: newTiles_44
+    21300090: newTiles_45
+    21300092: newTiles_46
+    21300094: newTiles_47
+    21300096: newTiles_48
+    21300098: newTiles_49
+    21300100: newTiles_50
+    21300102: newTiles_51
+    21300104: newTiles_52
+    21300106: newTiles_53
+    21300108: newTiles_54
+    21300110: newTiles_55
+    21300112: newTiles_56
+    21300114: newTiles_57
+    21300116: newTiles_58
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 256
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: newTiles_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 6363
+        width: 431
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.07244, y: 65.64319}
+        - {x: -65.07244, y: -64.35681}
+        - {x: 65.92756, y: -64.35681}
+        - {x: 65.92756, y: 65.64319}
+    - name: newTiles_1
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 6339
+        width: 407
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61.237915, y: 59.906494}
+        - {x: -61.237915, y: -59.093506}
+        - {x: 62.762085, y: -59.093506}
+        - {x: 62.762085, y: 59.906494}
+    - name: newTiles_2
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 6323
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.209045, y: 66.08191}
+        - {x: -65.209045, y: -64.91809}
+        - {x: 65.790955, y: -64.91809}
+        - {x: 65.790955, y: 66.08191}
+    - name: newTiles_3
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 6338
+        width: 431
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.45877, y: 65.10486}
+        - {x: -65.45877, y: -64.89514}
+        - {x: 65.54123, y: -64.89514}
+        - {x: 65.54123, y: 65.10486}
+    - name: newTiles_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5855
+        width: 433
+        height: 428
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 66.50766, y: -60.534668}
+        - {x: 66.50766, y: 65.46533}
+        - {x: -65.49234, y: 65.46533}
+        - {x: -65.49234, y: -64.53467}
+        - {x: -57.49234, y: -64.53467}
+        - {x: -56.49234, y: -63.534668}
+        - {x: -18.49234, y: -61.534668}
+        - {x: 23.50766, y: -64.53467}
+    - name: newTiles_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 5862
+        width: 430
+        height: 421
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.749695, y: 64.57605}
+        - {x: -64.749695, y: -63.42395}
+        - {x: 66.250305, y: -63.42395}
+        - {x: 66.250305, y: 64.57605}
+    - name: newTiles_6
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 5856
+        width: 433
+        height: 426
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.11365, y: 65.766846}
+        - {x: -65.11365, y: -64.233154}
+        - {x: 65.88635, y: -64.233154}
+        - {x: 65.88635, y: 65.766846}
+    - name: newTiles_7
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 5855
+        width: 429
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.56949, y: 65.46533}
+        - {x: -64.56949, y: -64.53467}
+        - {x: 66.43051, y: -64.53467}
+        - {x: 66.43051, y: 65.46533}
+    - name: newTiles_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5378
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.88162, y: 66.13489}
+        - {x: -64.88162, y: -64.86511}
+        - {x: 66.11838, y: -64.86511}
+        - {x: 66.11838, y: 66.13489}
+    - name: newTiles_9
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 5378
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.08185, y: 66.13489}
+        - {x: -65.08185, y: -64.86511}
+        - {x: 65.91815, y: -64.86511}
+        - {x: 65.91815, y: 66.13489}
+    - name: newTiles_10
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 5378
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.98056, y: 66.13489}
+        - {x: -64.98056, y: -64.86511}
+        - {x: 66.01944, y: -64.86511}
+        - {x: 66.01944, y: 66.13489}
+    - name: newTiles_11
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 5381
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.730255, y: 66.03955}
+        - {x: -65.730255, y: -64.96045}
+        - {x: 66.269745, y: -64.96045}
+        - {x: 66.269745, y: 66.03955}
+    - name: newTiles_12
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 5381
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.178406, y: 66.03955}
+        - {x: -65.178406, y: -64.96045}
+        - {x: 65.821594, y: -64.96045}
+        - {x: 65.821594, y: 66.03955}
+    - name: newTiles_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4900
+        width: 435
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.58775, y: 66.00305}
+        - {x: -65.58775, y: -64.99695}
+        - {x: 66.41225, y: -64.99695}
+        - {x: 66.41225, y: 66.00305}
+    - name: newTiles_14
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 4900
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.98645, y: 66.00305}
+        - {x: -64.98645, y: -64.99695}
+        - {x: 66.01355, y: -64.99695}
+        - {x: 66.01355, y: 66.00305}
+    - name: newTiles_15
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 4900
+        width: 431
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.07596, y: 66.50305}
+        - {x: -65.07596, y: -65.49695}
+        - {x: 65.92404, y: -65.49695}
+        - {x: 65.92404, y: 66.50305}
+    - name: newTiles_16
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 4877
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.50882, y: 66.06775}
+        - {x: -65.50882, y: -64.93225}
+        - {x: 66.49118, y: -64.93225}
+        - {x: 66.49118, y: 66.06775}
+    - name: newTiles_17
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 4862
+        width: 435
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.85394, y: 65.5448}
+        - {x: -65.85394, y: -65.4552}
+        - {x: 66.14606, y: -65.4552}
+        - {x: 66.14606, y: 65.5448}
+    - name: newTiles_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4442
+        width: 435
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.58775, y: 65.90173}
+        - {x: -65.58775, y: -65.09827}
+        - {x: 66.41225, y: -65.09827}
+        - {x: 66.41225, y: 65.90173}
+    - name: newTiles_19
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 4432
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.19258, y: 65.88635}
+        - {x: -65.19258, y: -65.11365}
+        - {x: 65.80742, y: -65.11365}
+        - {x: 65.80742, y: 65.88635}
+    - name: newTiles_20
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 4419
+        width: 430
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.96524, y: 65.96643}
+        - {x: -64.96524, y: -65.03357}
+        - {x: 66.03476, y: -65.03357}
+        - {x: 66.03476, y: 65.96643}
+    - name: newTiles_21
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 4416
+        width: 431
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61.800385, y: 66.06189}
+        - {x: -65.199615, y: -60.93811}
+        - {x: -65.199615, y: -64.93811}
+        - {x: 65.800385, y: -64.93811}
+        - {x: 65.800385, y: 66.06189}
+    - name: newTiles_22
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 4416
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.28912, y: 66.06189}
+        - {x: -65.28912, y: -64.93811}
+        - {x: 65.71088, y: -64.93811}
+        - {x: 65.71088, y: -61.93811}
+        - {x: -58.289124, y: 66.06189}
+    - name: newTiles_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3955
+        width: 429
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65, y: 66.55603}
+        - {x: -65, y: -65.44397}
+        - {x: 65, y: -65.44397}
+        - {x: 65, y: 66.55603}
+    - name: newTiles_24
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3952
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.97113, y: 66.15137}
+        - {x: -64.97113, y: -64.84863}
+        - {x: 66.02887, y: -64.84863}
+        - {x: 66.02887, y: 66.15137}
+    - name: newTiles_25
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 3942
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.220825, y: 66.13611}
+        - {x: -65.220825, y: -64.86389}
+        - {x: 65.779175, y: -64.86389}
+        - {x: 65.779175, y: 66.13611}
+    - name: newTiles_26
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3942
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.5889, y: 66.13611}
+        - {x: -65.5889, y: -64.86389}
+        - {x: 66.4111, y: -64.86389}
+        - {x: 66.4111, y: 66.13611}
+    - name: newTiles_27
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 3942
+        width: 429
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.651306, y: 66.13611}
+        - {x: -64.651306, y: -64.86389}
+        - {x: 65.348694, y: -64.86389}
+        - {x: 65.348694, y: 66.13611}
+    - name: newTiles_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3457
+        width: 434
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54.350998, y: 66.39343}
+        - {x: -65.351, y: 54.393433}
+        - {x: -65.351, y: -55.606567}
+        - {x: -50.350998, y: -65.60657}
+        - {x: 66.649, y: -65.60657}
+        - {x: 66.649, y: 66.39343}
+    - name: newTiles_29
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 3457
+        width: 431
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.211426, y: 66.39343}
+        - {x: -65.211426, y: -65.60657}
+        - {x: 65.788574, y: -65.60657}
+        - {x: 65.788574, y: 66.39343}
+    - name: newTiles_30
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 3457
+        width: 431
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.1749, y: 66.39343}
+        - {x: -65.1749, y: -65.60657}
+        - {x: 50.825104, y: -65.60657}
+        - {x: 65.8251, y: -58.606567}
+        - {x: 65.8251, y: 62.393433}
+        - {x: 51.825104, y: 66.39343}
+    - name: newTiles_31
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 3159
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.07712, y: 66.03717}
+        - {x: -65.07712, y: -64.96283}
+        - {x: 65.92288, y: -64.96283}
+        - {x: 65.92288, y: 66.03717}
+    - name: newTiles_32
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 3162
+        width: 432
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.05591, y: 65.94171}
+        - {x: -65.05591, y: -65.05829}
+        - {x: 65.94409, y: -65.05829}
+        - {x: 65.94409, y: 65.94171}
+    - name: newTiles_33
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 3159
+        width: 431
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.152534, y: 34.03717}
+        - {x: -65.152534, y: -27.96283}
+        - {x: -56.152534, y: -32.96283}
+        - {x: 65.847466, y: -32.96283}
+        - {x: 65.847466, y: 34.03717}
+    - name: newTiles_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3159
+        width: 431
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.11601, y: 34.03717}
+        - {x: -65.11601, y: -32.96283}
+        - {x: 65.88399, y: -32.96283}
+        - {x: 65.88399, y: 34.03717}
+    - name: newTiles_35
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 3159
+        width: 431
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.0795, y: 34.03717}
+        - {x: -65.0795, y: -32.96283}
+        - {x: 58.9205, y: -32.96283}
+        - {x: 65.9205, y: -29.96283}
+        - {x: 65.9205, y: 31.03717}
+        - {x: 64.9205, y: 34.03717}
+    - name: newTiles_36
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2635
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.04182, y: 66.03479}
+        - {x: -65.04182, y: -64.96521}
+        - {x: 65.95818, y: -64.96521}
+        - {x: 65.95818, y: 66.03479}
+    - name: newTiles_37
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2632
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.12308, y: 66.13019}
+        - {x: -65.12308, y: -64.86981}
+        - {x: 65.87692, y: -64.86981}
+        - {x: 65.87692, y: 66.13019}
+    - name: newTiles_38
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 2595
+        width: 431
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.204346, y: 66.47351}
+        - {x: -65.204346, y: -65.52649}
+        - {x: 65.795654, y: -65.52649}
+        - {x: 65.795654, y: 66.47351}
+    - name: newTiles_39
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 2595
+        width: 431
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.232605, y: 66.47351}
+        - {x: -65.232605, y: -65.52649}
+        - {x: 65.767395, y: -65.52649}
+        - {x: 65.767395, y: 66.47351}
+    - name: newTiles_40
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2098
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.94641, y: 66.11249}
+        - {x: -64.94641, y: -64.88751}
+        - {x: 66.05359, y: -64.88751}
+        - {x: 66.05359, y: 66.11249}
+    - name: newTiles_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 2098
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.042984, y: 66.11249}
+        - {x: -65.042984, y: -64.88751}
+        - {x: 65.957016, y: -64.88751}
+        - {x: 65.957016, y: 66.11249}
+    - name: newTiles_42
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 2098
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.05594, y: 66.11249}
+        - {x: -65.05594, y: -64.88751}
+        - {x: 65.94406, y: -64.88751}
+        - {x: 65.94406, y: 66.11249}
+    - name: newTiles_43
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 2104
+        width: 431
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.232605, y: 66.42169}
+        - {x: -65.232605, y: -65.57831}
+        - {x: 65.767395, y: -65.57831}
+        - {x: 65.767395, y: 66.42169}
+    - name: newTiles_44
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1388
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.41931, y: 66.02533}
+        - {x: -65.41931, y: -64.97467}
+        - {x: 66.58069, y: -64.97467}
+        - {x: 66.58069, y: 66.02533}
+    - name: newTiles_45
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1388
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.15724, y: 66.02533}
+        - {x: -65.15724, y: -64.97467}
+        - {x: 65.84276, y: -64.97467}
+        - {x: 65.84276, y: 66.02533}
+    - name: newTiles_46
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1391
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.170197, y: 65.92993}
+        - {x: -65.1702, y: 32.92993}
+        - {x: -65.1702, y: -52.07007}
+        - {x: -39.170197, y: -65.07007}
+        - {x: 39.829803, y: -65.07007}
+        - {x: 65.8298, y: -35.07007}
+        - {x: 65.8298, y: 44.92993}
+        - {x: 39.829803, y: 65.92993}
+    - name: newTiles_47
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1378
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.701965, y: 66.01004}
+        - {x: -65.701965, y: -64.98996}
+        - {x: 66.298035, y: -64.98996}
+        - {x: 66.298035, y: 66.01004}
+    - name: newTiles_48
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 788
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.41931, y: 66.10661}
+        - {x: -65.41931, y: -64.89339}
+        - {x: 66.58069, y: -64.89339}
+        - {x: 66.58069, y: 66.10661}
+    - name: newTiles_49
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 788
+        width: 435
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.71849, y: 66.10661}
+        - {x: -65.71849, y: -64.89339}
+        - {x: 66.28151, y: -64.89339}
+        - {x: 66.28151, y: 66.10661}
+    - name: newTiles_50
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 788
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.11246, y: 66.10661}
+        - {x: -65.11246, y: -64.89339}
+        - {x: 65.88754, y: -64.89339}
+        - {x: 65.88754, y: 66.10661}
+    - name: newTiles_51
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 788
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.720825, y: 66.10661}
+        - {x: -65.720825, y: -64.89339}
+        - {x: 66.279175, y: -64.89339}
+        - {x: 66.279175, y: 66.10661}
+    - name: newTiles_52
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 277
+        width: 435
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.62544, y: 66.02415}
+        - {x: -65.62544, y: -64.97585}
+        - {x: 66.37456, y: -64.97585}
+        - {x: 66.37456, y: 66.02415}
+    - name: newTiles_53
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 270
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.1537, y: 65.91343}
+        - {x: -65.1537, y: 62.91343}
+        - {x: -65.1537, y: -61.08657}
+        - {x: -61.1537, y: -65.08657}
+        - {x: 65.8463, y: -65.08657}
+        - {x: 65.8463, y: 65.91343}
+    - name: newTiles_54
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 267
+        width: 431
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.181976, y: 66.008835}
+        - {x: -65.18198, y: 64.008835}
+        - {x: -65.18198, y: -64.991165}
+        - {x: 65.81802, y: -64.991165}
+        - {x: 65.81802, y: 63.008835}
+        - {x: 62.818024, y: 66.008835}
+    - name: newTiles_55
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 287
+        width: 434
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62.756165, y: 66.03946}
+        - {x: -65.756165, y: 65.03946}
+        - {x: -65.756165, y: -45.96054}
+        - {x: -56.756165, y: -64.96054}
+        - {x: 59.243835, y: -64.96054}
+        - {x: 66.243835, y: -60.96054}
+        - {x: 66.243835, y: 66.03946}
+    - name: newTiles_56
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 435
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.62544, y: 33}
+        - {x: -65.62544, y: -33}
+        - {x: 66.37456, y: -33}
+        - {x: 66.37456, y: 33}
+    - name: newTiles_57
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 431
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65.058304, y: 33}
+        - {x: -65.058304, y: -33}
+        - {x: 65.941696, y: -33}
+        - {x: 65.941696, y: 33}
+    - name: newTiles_58
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 0
+        width: 430
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.99115, y: 33}
+        - {x: -64.99115, y: -33}
+        - {x: 66.00885, y: -33}
+        - {x: 66.00885, y: 32}
+        - {x: 64.00885, y: 33}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
