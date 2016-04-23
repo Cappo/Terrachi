@@ -9,8 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 477634}
   - 212: {fileID: 21215760}
-  - 61: {fileID: 6109690}
-  - 114: {fileID: 11400054}
+  - 60: {fileID: 6039194}
   m_Layer: 9
   m_Name: cave_4
   m_TagString: Untagged
@@ -30,8 +29,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6109690
-BoxCollider2D:
+--- !u!60 &6039194
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -42,19 +41,13 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1.5238096, y: 1.5238096}
---- !u!114 &11400054
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c8b742318eeae441ab26c8026ea2a18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Points:
+    m_Paths:
+    - - {x: 0.5, y: 0.7619048}
+      - {x: -0.7619048, y: 0.33333334}
+      - {x: -0.7619048, y: -0.7619048}
+      - {x: 0.7619048, y: -0.7619048}
+      - {x: 0.7619048, y: 0.7619048}
 --- !u!212 &21215760
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -79,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1943300279
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300008, guid: 375e8b72e766a4a8f8ffa07f8bed047a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -91,7 +84,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_SortingLayerID
+      value: -1943300279
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170814}

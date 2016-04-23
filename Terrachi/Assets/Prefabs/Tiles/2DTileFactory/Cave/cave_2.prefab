@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 411556}
   - 212: {fileID: 21217036}
-  - 60: {fileID: 6000566}
+  - 60: {fileID: 6007804}
   m_Layer: 9
   m_Name: cave_2
   m_TagString: Untagged
@@ -24,12 +24,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.295443, y: -6.142536, z: 0}
+  m_LocalPosition: {x: -18.674507, y: -2.0169363, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!60 &6000566
+--- !u!60 &6007804
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -46,8 +46,8 @@ PolygonCollider2D:
     - - {x: -0.7619048, y: -0.7619048}
       - {x: 0.7619048, y: -0.7619048}
       - {x: 0.7619048, y: -0.21428572}
-      - {x: 0.39188004, y: -0.3584056}
-      - {x: -0.55602074, y: -0.6885171}
+      - {x: 0.34659004, y: -0.36255097}
+      - {x: -0.5209751, y: -0.6720743}
 --- !u!212 &21217036
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1943300279
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 375e8b72e766a4a8f8ffa07f8bed047a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,7 +84,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_SortingLayerID
+      value: -1943300279
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127234}
