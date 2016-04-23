@@ -9,6 +9,7 @@ public class GrapplingHook : MonoBehaviour
     public Transform Player; //the object for player
     public Transform Anchor; //Anchor point
     public Transform ThisObject; //defining this object itself
+    public Transform Vine; //The vine sprite object
 
     private HingeJoint2D PlayerHingeJoint; //the HingeJoint attached to the player object
 
@@ -60,6 +61,7 @@ public class GrapplingHook : MonoBehaviour
         if (!Fired && !Hooked)
         {
             transform.position = Vector3.MoveTowards(transform.position, Player.position, 1);
+            Vine.transform.position = Vector3.MoveTowards(transform.position, Player.position, 1);
         }
 
         //if fired, then it will go to Shot method
@@ -67,7 +69,11 @@ public class GrapplingHook : MonoBehaviour
         {
             //GetComponent<AudioSource>().clip = ShootSound; //playing the sound when shot
             transform.position = Vector3.MoveTowards(transform.position, lastPos, MovementSpeed); //move the hook towards lastPos
-            DFH = Vector3.Distance(ThisObject.position, Player.position);
+
+            //Deal with the vine sprite
+            updateVineSprite();
+
+            DFH = Vector2.Distance(ThisObject.position, Player.position);
         }
 
         //Reach the limit or the click point
@@ -76,6 +82,8 @@ public class GrapplingHook : MonoBehaviour
             //return the hook to hook holder
             Fired = false;
             Hooked = false;
+
+            resetSprite();
         }
 
         //lets now initialize what will happen when hooked
@@ -116,7 +124,7 @@ public class GrapplingHook : MonoBehaviour
             Vector3 anchor_point = Anchor.transform.position - Player.transform.position;
             float rotation_correction = Mathf.Rad2Deg * Mathf.Atan(anchor_point.x / anchor_point.y) * -1;
             Player.transform.Rotate(new Vector3(0, 0, rotation_correction));
-            anchor_point.y = Vector3.Distance(Vector3.zero, anchor_point);
+            anchor_point.y = Vector2.Distance(Vector3.zero, anchor_point);
             anchor_point.x = 0;
             anchor_point.z = 0;
             PlayerHingeJoint = Player.gameObject.AddComponent<HingeJoint2D>();
@@ -144,6 +152,9 @@ public class GrapplingHook : MonoBehaviour
 
     void RopeMovement()
     {
+        //Update the vine sprite
+        updateVineSprite();
+
         //first we'll initialize the rigidbody of player
         Rigidbody2D rig;
         rig = Player.GetComponent<Rigidbody2D>();
@@ -171,7 +182,7 @@ public class GrapplingHook : MonoBehaviour
         if (vertical_input < 0)
         {
             //We should probably have a limit on how long this can be...
-            if (anchor_point.y < MD)
+            if (anchor_point.y * Player.transform.localScale.y < MD)
             {
                 anchor_point.y += ClimbRate;
                 Player.GetComponent<HingeJoint2D>().anchor = anchor_point;
@@ -185,7 +196,7 @@ public class GrapplingHook : MonoBehaviour
         }
         if (vertical_input > 0)
         {
-            if (anchor_point.y > 1F) //If we get too close to the anchor, weird things happen.
+            if (anchor_point.y * Player.transform.localScale.y > 2F) //If we get too close to the anchor, weird things happen.
             {
                 anchor_point.y -= ClimbRate;
                 Player.GetComponent<HingeJoint2D>().anchor = anchor_point;
@@ -220,5 +231,27 @@ public class GrapplingHook : MonoBehaviour
         Player.GetComponent<Player>().enabled = true;
         Player.transform.rotation = Quaternion.identity;
         Player.GetComponent<Player>().velocity = endVelocity;
+        resetSprite();
+    }
+
+    void resetSprite()
+    {
+        //Reset the sprite
+        Vine.transform.position = Player.transform.position;
+        Vine.transform.rotation = Quaternion.identity;
+        Vine.transform.localScale = new Vector3(.5F, 0F, .5F);
+    }
+
+    void updateVineSprite()
+    {
+        Vector3 scale = Vine.transform.localScale;
+        scale.y = ((Vector2.Distance(transform.position, Player.transform.position) / MD) * .55F);
+        Vine.transform.localScale = scale;
+        Vector3 pos = (transform.position + Player.transform.position) / 2;
+        Vine.transform.position = pos;
+        Vector3 rotation_vector = transform.position - Player.transform.position;
+        rotation_vector = new Vector3(-rotation_vector.y, rotation_vector.x, rotation_vector.z); //Rotate 90 degrees counter-clockwise
+        float rotation_offset = Mathf.Rad2Deg * Mathf.Atan(rotation_vector.y / rotation_vector.x);
+        Vine.transform.Rotate(new Vector3(0, 0, rotation_offset - Vine.transform.rotation.eulerAngles.z));
     }
 }
