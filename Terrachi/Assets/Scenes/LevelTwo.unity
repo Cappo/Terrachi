@@ -1012,7 +1012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 166090, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
       propertyPath: m_Name
-      value: Kodama Player
+      value: KodamaPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 21262454, guid: 68306b7c4b5e5b04eb961903d05e03e2, type: 2}
       propertyPath: m_SortingLayerID

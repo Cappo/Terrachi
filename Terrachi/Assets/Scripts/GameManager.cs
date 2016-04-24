@@ -6,6 +6,7 @@ public class GameManager {
 
     // Registration + MAC address?
     public bool registered = false;
+    public string license_key = "";
     public string uid = "";
 
     // Current Level

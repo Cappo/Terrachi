@@ -25,8 +25,12 @@ public class Registration : MonoBehaviour {
         error = false;
 
         SaveLoad.Load();
+
         if (SaveLoad.save.registered == true && SaveLoad.save.uid == SystemInfo.deviceUniqueIdentifier)
         {
+
+            Debug.Log(SaveLoad.save.license_key + " checks out");
+
             SceneManager.LoadScene(startMenuScene);
         }
 
@@ -73,6 +77,7 @@ public class Registration : MonoBehaviour {
             }
             else {
                 SaveLoad.save.registered = true;
+                SaveLoad.save.license_key = key;
                 SaveLoad.save.uid = SystemInfo.deviceUniqueIdentifier;
                 //SaveLoad.save.currentLevel = startMenuScene;
                 SaveLoad.Save();
