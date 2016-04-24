@@ -206,14 +206,14 @@ public class GrapplingHook : MonoBehaviour
         //Jump off of the grappling hook
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Vector2 boost = new Vector2(0, 12);
+            Vector2 boost = new Vector2(0, 15);
             if (horizontal_input < 0)
             {
-                boost.x -= 10F;
+                boost.x -= 12F;
             }
             else if (horizontal_input > 0)
             {
-                boost.x += 10F;
+                boost.x += 12F;
             }
             Player.GetComponent<Rigidbody2D>().velocity += boost;
             exitRope();
