@@ -14,7 +14,7 @@ public class StartMenu : MonoBehaviour {
 
     public void LoadGame()
     {
-        //TO DO
+        //TO DO FOR NICK
 
 
     }
