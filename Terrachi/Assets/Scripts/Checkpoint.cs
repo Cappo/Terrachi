@@ -9,10 +9,16 @@ public class Checkpoint : MonoBehaviour {
     //A list of all the other checkpoints
     public static GameObject[] CheckpointsList;
 
+    public Sprite cpActive;
+    public Sprite cpNotActive;
+
+    private SpriteRenderer sr;
+
 	// Use this for initialization
 	void Start () {
         //print("Test1");
         //CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
+        sr = this.GetComponent<SpriteRenderer>();
 	}
 	
     //Activate this checkpoint
@@ -29,6 +35,12 @@ public class Checkpoint : MonoBehaviour {
         SaveLoad.save.checkpoint = this.name;
 
         SaveLoad.Save();
+    }
+
+    public void Update()
+    {
+        if (activated) sr.sprite = cpActive;
+        else sr.sprite = cpNotActive;
     }
 
     void OnTriggerEnter2D(Collider2D other)
