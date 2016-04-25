@@ -1,0 +1,10 @@
+You have found a grappling whip!
+
+Here are the controls for this item:
+
+Use your mouse to aim and use...
+
+LMB - Extend grappling whip
+RMB - Detach grappling whip
+W - Lengthen grappling whip
+S - Shorten grappling whip
