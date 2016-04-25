@@ -111,7 +111,7 @@ public class Player : MonoBehaviour {
         }
     }
 
-    void Respawn()
+    public void Respawn()
     {
         Vector3 respawnPoint = Checkpoint.GetActiveCheckpointPosition();
         respawnPoint.y += 5;

@@ -10,6 +10,9 @@ public class EnemyFloaterAI : MonoBehaviour {
 
     public bool running;
 
+    //NOPE
+    //private SpriteRenderer color;
+
     private Animator myAnimator;
 
     //what to chase
@@ -56,6 +59,8 @@ public class EnemyFloaterAI : MonoBehaviour {
 
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        //NOPE
+        //color = GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>();
 
         myAnimator = GetComponent<Animator>();
 
@@ -103,6 +108,10 @@ public class EnemyFloaterAI : MonoBehaviour {
 
     IEnumerator PauseMovement()
     {
+
+        //this color shit does not work
+        //GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>().color = new Color(7f, 5f, 1f, .5f);
+        //color.color = new Color(1f, 1f, 1f, .5f);
         running = true;
         target.tag = "Untagged";
         //Backup and clear velocities
@@ -115,6 +124,9 @@ public class EnemyFloaterAI : MonoBehaviour {
         myAnimator.enabled = false;
         //Wait for a bit (two seconds)
         yield return new WaitForSeconds(3);
+
+        GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+
         myAnimator.enabled = true;
 
         running = false;

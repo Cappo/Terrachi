@@ -29,7 +29,10 @@ public class EnemyPatrol : MonoBehaviour {
         }
         if (col.gameObject.tag == "Player")
         {
-            Destroy(col.gameObject);
+            //Destroy(col.gameObject);
+            Player p = GameObject.Find("KodamaPlayer").GetComponent<Player>();
+            p.Respawn();
+
         }
     }
 }
