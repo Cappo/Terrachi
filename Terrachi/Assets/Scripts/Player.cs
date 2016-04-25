@@ -56,57 +56,68 @@ public class Player : MonoBehaviour {
 		minJumpVelocity = Mathf.Sqrt (2 * Mathf.Abs (gravity) * minJumpHeight);
 		print ("Gravity: " + gravity + "  Jump Velocity: " + maxJumpVelocity);
 	}
-        
-        //Update is called once per frame
-	void Update() {
-		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
-		float targetVelocityX = input.x * moveSpeed; //initially set this to just velocity.x
+
+    //Update is called once per frame
+    void Update() {
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        float targetVelocityX = input.x * moveSpeed; //initially set this to just velocity.x
 
         // if we are grounded (controller.collisions.below = true) use acceleration time grounded, otherwise use airborne.
-        velocity.x = Mathf.SmoothDamp (velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
+        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrounded : accelerationTimeAirborne);
 
 
 
 
-        
+
 
 
         //if the "Space" key is pressed 
-        if (Input.GetKeyDown (KeyCode.Space)) {
-			if (controller.collisions.below) {
-				velocity.y = maxJumpVelocity;
-			}
-		}
-		if (Input.GetKeyUp (KeyCode.Space)) {
-			if (velocity.y > minJumpVelocity) {
-				velocity.y = minJumpVelocity;
-			}
-		}
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            if (controller.collisions.below) {
+                velocity.y = maxJumpVelocity;
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.Space)) {
+            if (velocity.y > minJumpVelocity) {
+                velocity.y = minJumpVelocity;
+            }
+        }
 
-        
-	
-		velocity.y += gravity * Time.deltaTime;
-		controller.Move (velocity * Time.deltaTime, input);
+
+
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime, input);
 
         //this line prevents accumulation of the force of gravity while on the ground.
         if (controller.collisions.above || controller.collisions.below) {
-			velocity.y = 0;
-		}
+            velocity.y = 0;
+        }
 
         //Test "death" scenario, can be removed later
         if (transform.position.y < -100)
         {
             this.Respawn();
-            
+
         }
-	}
+
+        animator.SetFloat("speed", velocity.magnitude);
+        animator.SetBool("grounded", controller.collisions.below);
+
+        //Flip animation
+        if (input.x != 0 && Mathf.Sign(input.x) != Mathf.Sign(transform.localScale.x))
+        {
+            Vector3 new_scale = transform.localScale;
+            new_scale.x *= -1;
+            transform.localScale = new_scale;
+        }
+    }
 
     void OnCollisionEnter2D(Collision2D collider)
     {
         if (collider.collider.tag == "Hazard")
         {
             Respawn();
-            print("hi");
+            //print("hi");
 
         }
     }
