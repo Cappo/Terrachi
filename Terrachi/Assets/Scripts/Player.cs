@@ -99,6 +99,16 @@ public class Player : MonoBehaviour {
         }
 	}
 
+    void OnCollisionEnter2D(Collision2D collider)
+    {
+        if (collider.collider.tag == "Hazard")
+        {
+            Respawn();
+            print("hi");
+
+        }
+    }
+
     void Respawn()
     {
         Vector3 respawnPoint = Checkpoint.GetActiveCheckpointPosition();
