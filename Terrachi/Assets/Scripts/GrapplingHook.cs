@@ -30,11 +30,12 @@ public class GrapplingHook : MonoBehaviour
     public float Force;
 
     Controller2D controller;
+    private Animator animator;
 
     void Start()
     {
         controller = Player.GetComponent<Controller2D>();
-
+        animator = Player.GetComponent<Animator>();
     }
 
     void Update()
@@ -94,6 +95,7 @@ public class GrapplingHook : MonoBehaviour
             //we also will call the RopeMovement function
             RopeMovement();
 
+            animator.SetBool("grounded", false);
         }
 
 
@@ -232,6 +234,7 @@ public class GrapplingHook : MonoBehaviour
         Player.transform.rotation = Quaternion.identity;
         Player.GetComponent<Player>().velocity = endVelocity;
         resetSprite();
+        animator.SetBool("grounded", true);
     }
 
     void resetSprite()

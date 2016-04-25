@@ -14799,14 +14799,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 421488, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 421488, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
   m_IsPrefabParent: 0
@@ -18465,6 +18457,10 @@ Prefab:
       propertyPath: Vine
       value: 
       objectReference: {fileID: 1020322965}
+    - target: {fileID: 11405440, guid: c8a95c00305ba4747b7e54e73be4df91, type: 2}
+      propertyPath: ClimbRate
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8a95c00305ba4747b7e54e73be4df91, type: 2}
   m_IsPrefabParent: 0
