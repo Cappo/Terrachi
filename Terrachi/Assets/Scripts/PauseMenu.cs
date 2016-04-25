@@ -16,6 +16,13 @@ public class PauseMenu : MonoBehaviour {
     Player playerScript;
     GrapplingHook grappleScript;
 
+    public Font btnFont;
+    public Texture2D btnBGNormal;
+    public Texture2D btnBGHover;
+    public Texture2D btnBGClick;
+
+    public GUIStyle btnStyle;
+
     // Use this for initialization
     void Start()
     {
@@ -64,39 +71,51 @@ public class PauseMenu : MonoBehaviour {
 
     public void OnGUI()
     {
-        if (isPaused)
+        if (!isPaused)
         {
-            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "");
-
-            GUIStyle headerStyle = new GUIStyle();
-            headerStyle.font = headerFont;
-            headerStyle.fontSize = 48;
-            headerStyle.alignment = TextAnchor.MiddleCenter;
-            headerStyle.normal.textColor = Color.white;
-
-            GUI.Label(new Rect(10, 10, Screen.width - 20, Screen.height / 2), "Game Paused", headerStyle);
-
-            if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 - 50, 120, 30), "Resume"))
-            {
-                StartCoroutine("resume");
-            }
-
-            if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 - 10, 120, 30), "Respawn"))
-            {
-                StartCoroutine("loadCheckpoint");
-            }
-
-            if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 + 30, 120, 30), "Main Menu"))
-            {
-                StartCoroutine("quitToMainMenu");
-            }
-
-            if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 + 70, 120, 30), "Exit Game"))
-            {
-                StartCoroutine("quitToDesktop");
-            }
-            
+            return;
         }
+
+        GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "");
+
+        GUIStyle headerStyle = new GUIStyle();
+        headerStyle.font = headerFont;
+        headerStyle.fontSize = 48;
+        headerStyle.alignment = TextAnchor.MiddleCenter;
+        headerStyle.normal.textColor = Color.white;
+
+        GUI.Label(new Rect(10, 10, Screen.width - 20, Screen.height / 2), "Game Paused", headerStyle);
+
+        /*GUIStyle btnStyle = new GUIStyle();
+        btnStyle.normal.background = btnBGNormal;
+        btnStyle.normal.textColor = Color.white;
+        btnStyle.hover.background = btnStyle.focused.background = btnBGHover;
+        btnStyle.hover.textColor = btnStyle.focused.textColor = Color.white;
+        btnStyle.active.background = btnBGClick;
+        btnStyle.active.textColor = Color.white;
+        btnStyle.alignment = TextAnchor.MiddleCenter;
+        btnStyle.font = btnFont;*/
+
+        if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 - 50, 120, 30), "Resume", btnStyle))
+        {
+            StartCoroutine("resume");
+        }
+
+        if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 - 10, 120, 30), "Respawn", btnStyle))
+        {
+            StartCoroutine("loadCheckpoint");
+        }
+
+        if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 + 30, 120, 30), "Main Menu", btnStyle))
+        {
+            StartCoroutine("quitToMainMenu");
+        }
+
+        if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 + 70, 120, 30), "Exit Game", btnStyle))
+        {
+            StartCoroutine("quitToDesktop");
+        }
+           
     }
 
     //shows objects with ShowOnPause tag

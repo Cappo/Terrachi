@@ -11,6 +11,9 @@ public class StartMenu : MonoBehaviour {
     public Texture2D logoTex;
     public Texture2D btnBGNormal;
     public Texture2D btnBGHover;
+    public Texture2D btnBGClick;
+    public Texture2D background;
+    public Font btnFont;
 
     public void Start()
     {
@@ -79,25 +82,23 @@ public class StartMenu : MonoBehaviour {
             Debug.LogError("Please assign a texture on the inspector");
             return;
         }
-        //GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "");
 
-        //GUIStyle headerFont = new GUIStyle();
-        //headerFont.normal.textColor = Color.green;
-        //headerFont.fontSize = 24;
-        //headerFont.alignment = TextAnchor.MiddleCenter;
-        //GUI.Label(new Rect(0, Screen.height / 6, Screen.width, 50), "Terrachi", headerFont);
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), background, ScaleMode.ScaleAndCrop, true);
 
-        GUIStyle logoStyle = new GUIStyle();
-        logoStyle.alignment = TextAnchor.MiddleCenter;
+        GUI.Box(new Rect(0, 0, Screen.width, Screen.height), ""); // Transparent box to make the background a little darker
+
         GUI.DrawTexture(new Rect(10, 10, Screen.width-10, Screen.height/2 - 20), logoTex, ScaleMode.ScaleToFit, true);
 
 
         GUIStyle btnStyle = new GUIStyle();
         btnStyle.normal.background = btnBGNormal;
         btnStyle.normal.textColor = Color.white;
-        btnStyle.hover.background = btnBGHover;
-        btnStyle.hover.textColor = Color.white;
+        btnStyle.hover.background = btnStyle.focused.background = btnBGHover;
+        btnStyle.hover.textColor = btnStyle.focused.textColor = Color.white;
+        btnStyle.active.background = btnBGClick;
+        btnStyle.active.textColor = Color.white;
         btnStyle.alignment = TextAnchor.MiddleCenter;
+        btnStyle.font = btnFont;
 
         if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 - 20, 120, 30), "New Game", btnStyle))
         {

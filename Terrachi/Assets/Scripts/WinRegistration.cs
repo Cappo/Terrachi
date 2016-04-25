@@ -9,6 +9,18 @@ public class WinRegistration : MonoBehaviour {
 
     public bool error = false;
 
+    public void Start()
+    {
+        Debug.Log("Gonna do this save here thing");
+        SaveLoad.Load();
+
+        SaveLoad.save.win = true;
+
+        SaveLoad.Save();
+
+        StartCoroutine("RegisterWin");
+    }
+
     public void OnCollisionEnter2D(Collision2D obj)
     {
 
