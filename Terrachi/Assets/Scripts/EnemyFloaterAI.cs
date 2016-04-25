@@ -86,7 +86,8 @@ public class EnemyFloaterAI : MonoBehaviour {
         }
         if (col.gameObject.tag == "Player")
         {
-            Destroy(col.gameObject);
+            Player p = GameObject.Find("KodamaPlayer").GetComponent<Player>();
+            p.Respawn();
         }
 
         if (running)
