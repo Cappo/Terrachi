@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: b0d69ccd91b3e754b86874bd085420d0
+timeCreated: 1461559238
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spiderwalk_0
+    21300002: spiderwalk_1
+    21300004: spiderwalk_2
+    21300006: spiderwalk_3
+    21300008: spiderwalk_4
+    21300010: spiderwalk_5
+    21300012: spiderwalk_6
+    21300014: spiderwalk_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 256
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spiderwalk_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 1027
+        height: 1264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88.98217, y: 10.5}
+        - {x: 79.98217, y: 79.5}
+        - {x: 40.98217, y: 108.5}
+        - {x: -42.01783, y: 108.5}
+        - {x: -88.01783, y: 90.5}
+        - {x: -88.01783, y: -107.5}
+        - {x: -87.01783, y: -107.5}
+        - {x: -84.01783, y: -106.5}
+        - {x: -81.01783, y: -108.5}
+        - {x: -45.01783, y: -108.5}
+        - {x: -38.01783, y: -87.5}
+        - {x: 43.98217, y: -108.5}
+        - {x: 88.98217, y: -108.5}
+    - name: spiderwalk_1
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 0
+        width: 1161
+        height: 1264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.549606, y: -92.5}
+        - {x: 17.450394, y: -108.5}
+        - {x: 100.45039, y: -108.5}
+        - {x: 100.45039, y: -91.5}
+        - {x: 77.45039, y: -1.5}
+        - {x: 41.450394, y: -13.5}
+        - {x: 41.450394, y: -15.5}
+        - {x: 35.450394, y: -16.5}
+        - {x: 37.450394, y: -16.5}
+        - {x: 44.450394, y: -10.5}
+        - {x: 67.45039, y: 10.5}
+        - {x: 65.45039, y: 104.5}
+        - {x: 44.450394, y: 108.5}
+        - {x: -70.54961, y: 108.5}
+        - {x: -98.54961, y: 49.5}
+        - {x: -99.54961, y: 17.5}
+        - {x: -99.54961, y: -108.5}
+        - {x: -95.54961, y: -108.5}
+        - {x: -92.54961, y: -99.5}
+        - {x: -68.54961, y: -108.5}
+        - {x: -59.549606, y: -108.5}
+    - name: spiderwalk_2
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 0
+        width: 1289
+        height: 1264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111.26358, y: 83.5}
+        - {x: 48.26358, y: 108.5}
+        - {x: -67.73642, y: 108.5}
+        - {x: -81.73642, y: 92.5}
+        - {x: -110.73642, y: -66.5}
+        - {x: -110.73642, y: -108.5}
+        - {x: 111.26358, y: -108.5}
+    - name: spiderwalk_3
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 0
+        width: 1296
+        height: 1264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.47827, y: 108.5}
+        - {x: -70.47827, y: 97.5}
+        - {x: -96.47827, y: -3.5}
+        - {x: -111.47827, y: -49.5}
+        - {x: -111.47827, y: -108.5}
+        - {x: 111.52173, y: -108.5}
+        - {x: 111.52173, y: -68.5}
+        - {x: 63.52173, y: 108.5}
+    - name: spiderwalk_4
+      rect:
+        serializedVersion: 2
+        x: 5948
+        y: 0
+        width: 1289
+        height: 1264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82.998474, y: -106.5}
+        - {x: 60.998474, y: -40.5}
+        - {x: 109.998474, y: -108.5}
+        - {x: 111.998474, y: -108.5}
+        - {x: 111.998474, y: 71.5}
+        - {x: 107.998474, y: 91.5}
+        - {x: 58.998474, y: 108.5}
+        - {x: -52.001526, y: 108.5}
+        - {x: -58.001526, y: 107.5}
+        - {x: -96.001526, y: -6.5}
+        - {x: -110.001526, y: -101.5}
+        - {x: -110.001526, y: -108.5}
+        - {x: -72.001526, y: -108.5}
+        - {x: -57.001526, y: -101.5}
+        - {x: 60.998474, y: -108.5}
+        - {x: 82.998474, y: -108.5}
+    - name: spiderwalk_5
+      rect:
+        serializedVersion: 2
+        x: 7494
+        y: 3
+        width: 1294
+        height: 1261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112.355835, y: -20.986046}
+        - {x: 71.355835, y: 109.013954}
+        - {x: -72.644165, y: 109.013954}
+        - {x: -110.644165, y: -90.986046}
+        - {x: -110.644165, y: -107.986046}
+        - {x: -21.644165, y: -107.986046}
+        - {x: 15.355835, y: -81.986046}
+        - {x: 72.355835, y: -107.986046}
+        - {x: 112.355835, y: -107.986046}
+    - name: spiderwalk_6
+      rect:
+        serializedVersion: 2
+        x: 9016
+        y: 0
+        width: 1290
+        height: 1264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111.60156, y: -108.5}
+        - {x: 111.60156, y: -5.5}
+        - {x: 62.601562, y: 108.5}
+        - {x: -69.39844, y: 108.5}
+        - {x: -110.39844, y: 68.5}
+        - {x: -110.39844, y: -108.5}
+        - {x: -105.39844, y: -108.5}
+        - {x: -72.39844, y: -45.5}
+        - {x: -70.39844, y: -42.5}
+        - {x: -51.398438, y: -108.5}
+    - name: spiderwalk_7
+      rect:
+        serializedVersion: 2
+        x: 10726
+        y: 0
+        width: 1161
+        height: 1264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100.55505, y: -92.5}
+        - {x: 89.55505, y: -32.5}
+        - {x: 76.55505, y: -5.5}
+        - {x: 67.55505, y: -7.5}
+        - {x: 61.555054, y: 55.5}
+        - {x: 47.555054, y: 108.5}
+        - {x: -70.44495, y: 108.5}
+        - {x: -84.44495, y: 62.5}
+        - {x: -99.44495, y: 5.5}
+        - {x: -99.44495, y: -108.5}
+        - {x: -97.44495, y: -108.5}
+        - {x: -94.44495, y: -107.5}
+        - {x: -81.44495, y: -52.5}
+        - {x: -78.44495, y: -39.5}
+        - {x: -77.44495, y: -34.5}
+        - {x: -63.444946, y: -108.5}
+        - {x: -58.444946, y: -108.5}
+        - {x: -47.444946, y: -48.5}
+        - {x: 5.5550537, y: -108.5}
+        - {x: 100.55505, y: -108.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
