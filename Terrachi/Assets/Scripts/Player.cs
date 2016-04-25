@@ -101,6 +101,7 @@ public class Player : MonoBehaviour {
         }
 
         animator.SetFloat("speed", velocity.magnitude);
+        animator.SetBool("grounded", controller.collisions.below);
 
         //Flip animation
         if (input.x != 0 && Mathf.Sign(input.x) != Mathf.Sign(transform.localScale.x))
@@ -109,14 +110,14 @@ public class Player : MonoBehaviour {
             new_scale.x *= -1;
             transform.localScale = new_scale;
         }
-	}
+    }
 
     void OnCollisionEnter2D(Collision2D collider)
     {
         if (collider.collider.tag == "Hazard")
         {
             Respawn();
-            print("hi");
+            //print("hi");
 
         }
     }
