@@ -5,15 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hookable
+  - Checkpoint
+  - Enemy
+  - Obstacle
+  - Hazard
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  -
+  - 
   - Water
   - UI
-  -
-  -
+  - 
+  - 
   - Player
   - Obstacle
   - TriggerZones

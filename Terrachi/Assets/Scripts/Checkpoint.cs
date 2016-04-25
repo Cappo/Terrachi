@@ -16,7 +16,7 @@ public class Checkpoint : MonoBehaviour {
 	}
 	
     //Activate this checkpoint
-	private void ActivateCheckpoint()
+	public void ActivateCheckpoint()
     {
         //Deactivate other checkpoints
         foreach (GameObject cp in CheckpointsList)

@@ -36,12 +36,14 @@ public class Player : MonoBehaviour {
         SaveLoad.Load();
         Checkpoint.CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
 
-        
+        Debug.Log("Player loaded checkpoint: " + SaveLoad.save.checkpoint);
+
         if (SaveLoad.save.checkpoint != "")
         {
             Checkpoint cp = GameObject.Find(SaveLoad.save.checkpoint).GetComponent<Checkpoint>();
 
-            cp.activated = true;
+            //cp.activated = true;
+            cp.ActivateCheckpoint();
 
             this.Respawn();
         } 
@@ -108,6 +110,16 @@ public class Player : MonoBehaviour {
             transform.localScale = new_scale;
         }
 	}
+
+    void OnCollisionEnter2D(Collision2D collider)
+    {
+        if (collider.collider.tag == "Hazard")
+        {
+            Respawn();
+            print("hi");
+
+        }
+    }
 
     void Respawn()
     {

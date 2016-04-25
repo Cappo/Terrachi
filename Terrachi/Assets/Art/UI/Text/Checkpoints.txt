@@ -1,0 +1,7 @@
+These are checkpoints.
+
+Checkpoints will keep track of your progress.
+
+If you die, you will respawn at the last checkpoint you passed.
+
+You can also manually respawn from the pause menu by hitting the Escape key!
