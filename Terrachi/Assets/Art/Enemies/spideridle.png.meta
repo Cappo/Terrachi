@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 4348079a153626145944ce33ab293863
+timeCreated: 1461456815
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spideridle_0
+    21300002: spideridle_1
+    21300004: spideridle_2
+    21300006: spideridle_3
+    21300008: spideridle_4
+    21300010: spideridle_5
+    21300012: spideridle_6
+    21300014: spideridle_7
+    21300016: spideridle_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 256
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spideridle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57, y: 107}
+        - {x: -57, y: 107}
+        - {x: -88, y: 58}
+        - {x: -88, y: -107}
+        - {x: 88, y: -107}
+        - {x: 88, y: 53}
+        - {x: 67, y: 102}
+    - name: spideridle_1
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 0
+        width: 1027
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88.013596, y: -8}
+        - {x: 87.013596, y: -7}
+        - {x: 77.013596, y: 70}
+        - {x: 46.013596, y: 107}
+        - {x: -66.986404, y: 107}
+        - {x: -87.986404, y: 70}
+        - {x: -87.986404, y: -107}
+        - {x: -83.986404, y: -107}
+        - {x: -75.986404, y: -73}
+        - {x: -53.986404, y: -107}
+        - {x: 88.013596, y: -107}
+    - name: spideridle_2
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 0
+        width: 1027
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58.080353, y: -14}
+        - {x: 57.080353, y: -15}
+        - {x: 50.080353, y: -16}
+        - {x: 52.080353, y: -16}
+        - {x: 67.08035, y: -7}
+        - {x: 79.08035, y: 49}
+        - {x: 64.08035, y: 107}
+        - {x: -65.91965, y: 107}
+        - {x: -84.91965, y: 57}
+        - {x: -87.91965, y: 43}
+        - {x: -87.91965, y: -107}
+        - {x: 89.08035, y: -107}
+        - {x: 89.08035, y: -8}
+        - {x: 77.08035, y: -6}
+    - name: spideridle_3
+      rect:
+        serializedVersion: 2
+        x: 3958
+        y: 0
+        width: 1027
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88.06799, y: -7}
+        - {x: 73.06799, y: 73}
+        - {x: 50.067993, y: 99}
+        - {x: 31.067993, y: 106}
+        - {x: 27.067993, y: 107}
+        - {x: -24.932007, y: 107}
+        - {x: -43.932007, y: 101}
+        - {x: -64.93201, y: 73}
+        - {x: -67.93201, y: 61}
+        - {x: -87.93201, y: -2}
+        - {x: -87.93201, y: -107}
+        - {x: 88.06799, y: -107}
+    - name: spideridle_4
+      rect:
+        serializedVersion: 2
+        x: 5341
+        y: 0
+        width: 1027
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.851685, y: 107}
+        - {x: -80.851685, y: 19}
+        - {x: -56.851685, y: -8}
+        - {x: -45.851685, y: -16}
+        - {x: -44.851685, y: -16}
+        - {x: -48.851685, y: -16}
+        - {x: -49.851685, y: -15}
+        - {x: -53.851685, y: -13}
+        - {x: -85.851685, y: -5}
+        - {x: -86.851685, y: -39}
+        - {x: -86.851685, y: -107}
+        - {x: 89.148315, y: -107}
+        - {x: 89.148315, y: 71}
+        - {x: 68.148315, y: 107}
+    - name: spideridle_5
+      rect:
+        serializedVersion: 2
+        x: 6642
+        y: 0
+        width: 1027
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.798584, y: -104}
+        - {x: -40.798584, y: -83}
+        - {x: -16.798584, y: -107}
+        - {x: 88.201416, y: -107}
+        - {x: 88.201416, y: 14}
+        - {x: 76.201416, y: 88}
+        - {x: 58.201416, y: 107}
+        - {x: -39.798584, y: 107}
+        - {x: -86.798584, y: 83}
+        - {x: -86.798584, y: -107}
+        - {x: -45.798584, y: -107}
+    - name: spideridle_6
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 0
+        width: 1027
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.87561, y: -106}
+        - {x: -83.87561, y: -107}
+        - {x: 89.12439, y: -107}
+        - {x: 89.12439, y: 97}
+        - {x: 87.12439, y: 107}
+        - {x: -70.87561, y: 107}
+        - {x: -85.87561, y: 61}
+    - name: spideridle_7
+      rect:
+        serializedVersion: 2
+        x: 9512
+        y: 0
+        width: 1027
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86.15271, y: -100}
+        - {x: 88.15271, y: -98}
+        - {x: 88.15271, y: 12}
+        - {x: 66.15271, y: 102}
+        - {x: 41.15271, y: 107}
+        - {x: -50.84729, y: 107}
+        - {x: -76.84729, y: 80}
+        - {x: -85.84729, y: -5}
+        - {x: -85.84729, y: -107}
+        - {x: -80.84729, y: -107}
+        - {x: -74.84729, y: -98}
+        - {x: -51.84729, y: -107}
+        - {x: 59.15271, y: -107}
+    - name: spideridle_8
+      rect:
+        serializedVersion: 2
+        x: 10924
+        y: 0
+        width: 1024
+        height: 1251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.69385, y: 104}
+        - {x: 64.69385, y: 107}
+        - {x: -54.306152, y: 107}
+        - {x: -77.30615, y: 97}
+        - {x: -84.30615, y: 61}
+        - {x: -84.30615, y: -107}
+        - {x: 84.69385, y: -107}
+        - {x: 88.69385, y: -104}
+        - {x: 88.69385, y: 26}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

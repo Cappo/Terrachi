@@ -33,8 +33,8 @@ public class Player : MonoBehaviour {
 
     void Start() {
         controller = GetComponent<Controller2D>();
-        SaveLoad.Load();
-        Checkpoint.CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
+       // SaveLoad.Load();
+        //Checkpoint.CheckpointsList = GameObject.FindGameObjectsWithTag("Checkpoint");
 
         /*
         if (SaveLoad.save.checkpoint != "")
