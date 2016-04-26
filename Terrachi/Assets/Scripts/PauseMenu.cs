@@ -108,11 +108,13 @@ public class PauseMenu : MonoBehaviour {
 
         if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 + 30, 120, 30), "Main Menu", btnStyle))
         {
+            SaveLoad.Save();
             StartCoroutine("quitToMainMenu");
         }
 
         if (GUI.Button(new Rect((Screen.width / 2) - 60, Screen.height * 2 / 3 + 70, 120, 30), "Exit Game", btnStyle))
         {
+            SaveLoad.Save();
             StartCoroutine("quitToDesktop");
         }
            
@@ -153,21 +155,21 @@ public class PauseMenu : MonoBehaviour {
         //If we are running in a standalone build of the game
 #if UNITY_STANDALONE
             //Quit the application
-            SaveLoad.Save();
+            //SaveLoad.Save();
             Application.Quit();
 #endif
 
         //If we are running in the editor
 #if UNITY_EDITOR
             //Stop playing the scene
-            SaveLoad.Save();
+            //SaveLoad.Save();
             UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
 
     public void quitToMainMenu()
     {
-        SaveLoad.Save();
+        //SaveLoad.Save();
         SceneManager.LoadScene(startMenuScene);
     }
 }

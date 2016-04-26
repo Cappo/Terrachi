@@ -47,7 +47,7 @@ public class StartMenu : MonoBehaviour {
 
     public void NewGame()
     {
-        //SaveLoad.Load();
+        SaveLoad.Load();
         SaveLoad.save.currentLevel = startLevel;
         SaveLoad.save.checkpoint = "";
         SaveLoad.Save();
@@ -56,7 +56,7 @@ public class StartMenu : MonoBehaviour {
 
     public void LoadGame()
     {
-        //SaveLoad.Load();
+        SaveLoad.Load();
         SceneManager.LoadScene(SaveLoad.save.currentLevel);
     }
 

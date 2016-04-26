@@ -26,6 +26,8 @@ public class StoryBoard : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
+            SaveLoad.save.currentLevel = nextScene;
+            SaveLoad.Save();
             SceneManager.LoadScene(nextScene);
         }
     }
