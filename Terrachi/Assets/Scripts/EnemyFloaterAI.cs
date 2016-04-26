@@ -122,11 +122,18 @@ public class EnemyFloaterAI : MonoBehaviour {
         //Finally freeze the body in place so forces like gravity or movement won't affect it
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
+        Color tmp = GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>().color;
+        tmp.a = .5f;
+        GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>().color = tmp;
+
+
         myAnimator.enabled = false;
         //Wait for a bit (two seconds)
         yield return new WaitForSeconds(3);
 
-        GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+        Color reg = GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>().color;
+        reg.a = 1f;
+        GameObject.Find("KodamaPlayer").GetComponent<SpriteRenderer>().color = reg;
 
         myAnimator.enabled = true;
 
