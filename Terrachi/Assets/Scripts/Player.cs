@@ -127,6 +127,10 @@ public class Player : MonoBehaviour {
         Vector3 respawnPoint = Checkpoint.GetActiveCheckpointPosition();
         respawnPoint.y += 5;
         velocity = Vector3.zero;
+        if (GameObject.Find("Grappling Hook").GetComponent<GrapplingHook>().Hooked)
+        {
+            GameObject.Find("Grappling Hook").GetComponent<GrapplingHook>().Invoke("exitRope", 0);
+        }
         transform.position = respawnPoint;
     }
 }
