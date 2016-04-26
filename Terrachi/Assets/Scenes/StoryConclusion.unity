@@ -313,7 +313,7 @@ MonoBehaviour:
     m_StretchHeight: 0
   background: {fileID: 2800000, guid: e135ef5380244ce469602b75a58524ff, type: 3}
   movementScaler: 0.5
-  nextScene: LevelOneAlpha
+  nextScene: StartMenu
 --- !u!1 &1675702591
 GameObject:
   m_ObjectHideFlags: 0
