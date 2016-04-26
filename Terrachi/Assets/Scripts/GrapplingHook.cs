@@ -79,7 +79,7 @@ public class GrapplingHook : MonoBehaviour
         }
 
         //Reach the limit or the click point
-        if ((DFH > MD) || (transform.position.x.Equals(lastPos.x) && transform.position.y.Equals(lastPos.y)))
+        if (!Hooked && ((DFH > MD) || (transform.position.x.Equals(lastPos.x) && transform.position.y.Equals(lastPos.y))))
         {
             //return the hook to hook holder
             Fired = false;
