@@ -16,7 +16,8 @@ public class LevelLoader : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if ( playerInZone ) {
-
+            SaveLoad.save.checkpoint = "";
+            SaveLoad.Save();
             SceneManager.LoadScene(levelToLoad);
         }
 	}
