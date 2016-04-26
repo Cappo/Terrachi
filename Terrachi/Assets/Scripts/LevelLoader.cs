@@ -17,6 +17,7 @@ public class LevelLoader : MonoBehaviour {
 	void Update () {
         if ( playerInZone ) {
             SaveLoad.save.checkpoint = "";
+            SaveLoad.save.currentLevel = levelToLoad;
             SaveLoad.Save();
             SceneManager.LoadScene(levelToLoad);
         }
