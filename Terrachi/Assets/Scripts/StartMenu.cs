@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class StartMenu : MonoBehaviour {
 
-    readonly public string startLevel = "LevelOneAlpha";
+    readonly public string startLevel = "StoryIntro";
     private bool saveExists = false;
 
     public Texture2D logoTex;
