@@ -201,8 +201,6 @@ public class EnemyFloaterAI : MonoBehaviour {
 
             velocity = rb.velocity.x;
 
-            Debug.Log("r: " + rb.velocity.x);
-
             myAnimator.SetFloat("animSpeed", Mathf.Abs(velocity));
 
             if (Input.GetKeyDown(KeyCode.E))

@@ -174,7 +174,6 @@ public class EnemyAI : MonoBehaviour {
                 return;
             }
      
-            Debug.Log("End of path Reached.");
             pathIsEnded = true;
             return;
         }
@@ -188,13 +187,10 @@ public class EnemyAI : MonoBehaviour {
             Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
             dir *= speed * Time.fixedDeltaTime;
 
-            Debug.Log("I AM HERE");
             //Move AI in direction
             rb.AddForce(dir, fMode);
 
             velocity = rb.velocity.x;
-
-            Debug.Log("r: " + rb.velocity.x);
 
             myAnimator.SetFloat("animSpeed", Mathf.Abs(velocity));
 
