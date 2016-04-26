@@ -21,9 +21,9 @@ public class GrapplingHook : MonoBehaviour
     public float DFH; //calculating distance from hook holder, DFH stands for "Distance From HookHolder"
     public float ClimbRate = .1F; //Rate at which the player can climb or lower on the grappling hook
 
-    private Vector3 lastPos; //calculating the last position of the mouse click in order to sen the hook object
-    private Vector3 lastPosOO; //last position for OtherObject (lastPosOO stands for "last position other object"
-    private Vector3 curPosOO; //current position for OtherObject (curPosOO stands for "current position other object"
+    private Vector2 lastPos; //calculating the last position of the mouse click in order to sen the hook object
+    private Vector2 lastPosOO; //last position for OtherObject (lastPosOO stands for "last position other object"
+    private Vector2 curPosOO; //current position for OtherObject (curPosOO stands for "current position other object"
 
     //public AudioClip ShootSound; //the sound effect when hook gets shot
 
@@ -36,6 +36,7 @@ public class GrapplingHook : MonoBehaviour
     {
         controller = Player.GetComponent<Controller2D>();
         animator = Player.GetComponent<Animator>();
+        transform.position = Player.transform.position;
     }
 
     void Update()
@@ -61,15 +62,15 @@ public class GrapplingHook : MonoBehaviour
         //by default, the hook will be following the Player object if not fired and if not hooked
         if (!Fired && !Hooked)
         {
-            transform.position = Vector3.MoveTowards(transform.position, Player.position, 1);
-            Vine.transform.position = Vector3.MoveTowards(transform.position, Player.position, 1);
+            transform.position = Player.transform.position;
+            Vine.transform.position = Player.transform.position;
         }
 
         //if fired, then it will go to Shot method
         if (Fired)
         {
             //GetComponent<AudioSource>().clip = ShootSound; //playing the sound when shot
-            transform.position = Vector3.MoveTowards(transform.position, lastPos, MovementSpeed); //move the hook towards lastPos
+            transform.position = Vector2.MoveTowards(transform.position, lastPos, MovementSpeed); //move the hook towards lastPos
 
             //Deal with the vine sprite
             updateVineSprite();
@@ -78,7 +79,7 @@ public class GrapplingHook : MonoBehaviour
         }
 
         //Reach the limit or the click point
-        if ((DFH > MD) || transform.position.Equals(lastPos))
+        if ((DFH > MD) || (transform.position.x.Equals(lastPos.x) && transform.position.y.Equals(lastPos.y)))
         {
             //return the hook to hook holder
             Fired = false;
@@ -119,20 +120,18 @@ public class GrapplingHook : MonoBehaviour
             //Try to let the player grapple even when they're standing
             if (Player.GetComponent<Controller2D>().collisions.below)
             {
-                Player.transform.Translate(Vector3.up * .2F);
+                Player.transform.Translate(Vector2.up * .2F);
             }
             //Fix the rotation
             //Get the anchor point we'll use later
-            Vector3 anchor_point = Anchor.transform.position - Player.transform.position;
+            Vector2 anchor_point = Anchor.transform.position - Player.transform.position;
             float rotation_correction = Mathf.Rad2Deg * Mathf.Atan(anchor_point.x / anchor_point.y) * -1;
             Player.transform.Rotate(new Vector3(0, 0, rotation_correction));
             anchor_point.y = Vector2.Distance(Vector3.zero, anchor_point);
             anchor_point.x = 0;
-            anchor_point.z = 0;
             PlayerHingeJoint = Player.gameObject.AddComponent<HingeJoint2D>();
             anchor_point.x /= Player.transform.localScale.x;
             anchor_point.y /= Player.transform.localScale.y;
-            anchor_point.z /= Player.transform.localScale.z;
             PlayerHingeJoint.anchor = anchor_point;
             PlayerHingeJoint.connectedBody = Anchor.GetComponent<Rigidbody2D>();
             PlayerHingeJoint.connectedAnchor = Vector3.zero;
@@ -149,6 +148,7 @@ public class GrapplingHook : MonoBehaviour
         {
             Hooked = false;
             Fired = false;
+            resetSprite();
         }
     }
 
@@ -250,8 +250,9 @@ public class GrapplingHook : MonoBehaviour
         Vector3 scale = Vine.transform.localScale;
         scale.y = ((Vector2.Distance(transform.position, Player.transform.position) / MD) * .55F);
         Vine.transform.localScale = scale;
-        Vector3 pos = (transform.position + Player.transform.position) / 2;
-        Vine.transform.position = pos;
+        Vector2 pos = (transform.position + Player.transform.position) / 2;
+        Vector3 pos3d = new Vector3(pos.x, pos.y, 0);
+        Vine.transform.position = pos3d;
         Vector3 rotation_vector = transform.position - Player.transform.position;
         rotation_vector = new Vector3(-rotation_vector.y, rotation_vector.x, rotation_vector.z); //Rotate 90 degrees counter-clockwise
         float rotation_offset = Mathf.Rad2Deg * Mathf.Atan(rotation_vector.y / rotation_vector.x);

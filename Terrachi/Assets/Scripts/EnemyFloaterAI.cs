@@ -49,7 +49,6 @@ public class EnemyFloaterAI : MonoBehaviour {
     void Awake()
     {
         //Vector2 startPos = transform.position;
-        Debug.Log("START " + startPos);
     }
 
 
