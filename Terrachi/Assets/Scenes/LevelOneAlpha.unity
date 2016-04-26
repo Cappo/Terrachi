@@ -15865,11 +15865,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 421488, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 28.46
+      value: 19.59
       objectReference: {fileID: 0}
     - target: {fileID: 421488, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.19
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 421488, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15893,7 +15893,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 421488, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bb3abc179bc0ea408d00411aed43101, type: 2}
@@ -25506,6 +25506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
+  cpActive: {fileID: 21300000, guid: f6316b769e9d1f146832e487363847ba, type: 3}
+  cpNotActive: {fileID: 21300000, guid: 9ad00d19f7c07c549a864ca3a46e5ae5, type: 3}
 --- !u!61 &1547641764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28224,7 +28226,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1714297945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.1, y: -1.7, z: -2.59375}
+  m_LocalPosition: {x: 12.1, y: -1.7, z: -2.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 847567509}
@@ -28242,6 +28244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 1
+  cpActive: {fileID: 21300000, guid: f6316b769e9d1f146832e487363847ba, type: 3}
+  cpNotActive: {fileID: 21300000, guid: 9ad00d19f7c07c549a864ca3a46e5ae5, type: 3}
 --- !u!61 &1714297949
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34589,6 +34593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
+  cpActive: {fileID: 21300000, guid: f6316b769e9d1f146832e487363847ba, type: 3}
+  cpNotActive: {fileID: 21300000, guid: 9ad00d19f7c07c549a864ca3a46e5ae5, type: 3}
 --- !u!61 &2129965862
 BoxCollider2D:
   m_ObjectHideFlags: 0
